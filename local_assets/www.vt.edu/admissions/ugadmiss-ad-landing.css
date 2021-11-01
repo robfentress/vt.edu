@@ -1,0 +1,41 @@
+/* --------------------------------------------------------
+
+Ad-page-only styles
+
+----------------------------------------------------------*/
+
+	/* Do not change. It only affects this page */
+	.ad-landing .row-container > div {
+		max-width:100%;
+	}
+	.ad-landing .form-container {
+		background-color:#6D6A75; /* Hokie Stone */
+		color:#fff;
+		padding: 20px;
+	}
+	.ad-landing .form-container .external-form iframe {
+		width: 100%;
+		height: 881px;
+		min-height: -webkit-fill-available !important;
+		min-height: -moz-available !important;
+	}
+
+	.ad-landing .form-container .form-submit-button {
+		background-color: #8b1f41;
+		text-align: center;
+	}
+	.ad-landing .form-container .form-submit-button span {
+		width: 100%;
+		display: block;
+		padding:10px;
+		background-color: inherit;
+	}
+	.ad-landing .form-container .form-submit-button span:hover {
+		background-color: #FF6600;
+	}
+	.ad-landing .form-container .form-submit-button a,
+	.ad-landing .form-container .form-submit-button a:link,
+	.ad-landing .form-container .form-submit-button a:hover {
+		color:#fff;
+		text-decoration: none;
+	}

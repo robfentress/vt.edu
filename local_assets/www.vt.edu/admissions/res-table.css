@@ -1,0 +1,144 @@
+/* --------------------------------------------------------
+
+Custom responsive table written by Jason Lockhart
+2017-02-20 18:03:29
+
+----------------------------------------------------------*/
+	.ugadmiss .res-table {
+		border: 0px;
+	}
+	.ugadmiss .res-table table>tbody>tr>td,
+	.ugadmiss .res-table table>tbody>tr>th, 
+	.ugadmiss .res-table table>tfoot>tr>td,
+	.ugadmiss .res-table table>tfoot>tr>th, 
+	.ugadmiss .res-table table>thead>tr>td
+	{
+		border: 1px solid rgba(221, 221, 221, 1.0) !important;
+		font-size: 18px;
+		font-weight: 400;
+		vertical-align: top !important;
+		padding: 20px;
+	}
+
+	.ugadmiss .res-table table>tr>th,
+	.ugadmiss .res-table table>thead>tr>th {
+		background-color: rgba(239,239,239,1.0);
+		border: 1px solid rgba(221, 221, 221, 1.0) !important;
+		font-size: 18px;
+		font-weight: 600 !important;
+		vertical-align: middle;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.ugadmiss .res-table table tbody tr:nth-child(even) {
+		background: rgba(247,247,247,1.0);
+	}
+
+	.ugadmiss .res-table table {
+		border: 1px;
+	}
+
+	.ugadmiss .res-table table thead {
+		display: table-header-group;
+	}
+
+	.ugadmiss .res-table table tr {
+		margin-bottom: 0;
+		display: table-row;
+		border-bottom: none;
+	}
+
+	.ugadmiss .res-table table td {
+		display: table-cell;
+		text-align: left;
+		border-bottom: none;
+	}
+
+	.ugadmiss .res-table table>tr>td[data-label] h1,
+	.ugadmiss .res-table table>tr>td[data-label] h2,
+	.ugadmiss .res-table table>tr>td[data-label] h3,
+	.ugadmiss .res-table table>tbody>tr>td[data-label] h1,
+	.ugadmiss .res-table table>tbody>tr>td[data-label] h2,
+	.ugadmiss .res-table table>tbody>tr>td[data-label] h3 {
+		margin-top:0px !important;
+	}
+
+	.ugadmiss .res-table table td::before {
+		content: '';
+		float: none;
+		text-transform: none;
+		font-weight: normal;
+	}
+
+	.ugadmiss .res-table[class~="noheader"] table>thead {
+		display: none;
+	}
+	.ugadmiss .res-table[class~="rightheader"] table>thead>tr>th,
+	.ugadmiss .res-table[class~="rightheader"] table>tr>th {
+		text-align: right !important;
+	}
+	.ugadmiss .res-table[class~="leftheader"] table>thead>tr>th,
+	.ugadmiss .res-table[class~="leftheader"] table>tr>th {
+		text-align: left !important;
+	}
+	.ugadmiss .res-table[class~="centerheader"] table>thead>tr>th,
+	.ugadmiss .res-table[class~="centerheader"] table>tr>th {
+		text-align: center !important;
+	}
+
+
+@media only screen and (max-width: 991px) {
+	.ugadmiss .res-table table {
+		width: 100%;
+	}
+
+	.ugadmiss .res-table table thead {
+		display: none;
+	}
+
+	.ugadmiss .res-table table tr {
+		margin-bottom: 0px;
+		display: block;
+		border-bottom: 1px solid rgba(221, 221, 221, 1.0);
+	}
+
+	.ugadmiss .res-table table td { 
+		display: block;
+		text-align: right;
+		border-bottom: 1px dotted rgba(204, 204, 204, 1.0);
+		white-space: normal !important;
+	}
+
+	.ugadmiss .res-table table tbody tr:nth-child(even) {
+		background: inherit;
+	}
+
+	.ugadmiss .res-table table td::before {
+		content: attr(data-label)":";
+		margin-right: 8px; /* added and this */
+		float: left;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.ugadmiss .res-table table td[data-label="\00a0"]::before {
+		content:"" !important;
+	}
+	.ugadmiss .res-table table td[data-label="\00a0"] {
+		text-align: left;
+	}
+
+	./* ugadmiss .res-table table>tbody>tr>td:first-child {
+		width:initial;
+	} */
+
+	.ugadmiss .res-table[class~='hssb'] table>tbody>tr>td:first-child {
+		text-align: left !important;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.ugadmiss .res-table[class~='hssb'] table>tbody>tr>td:first-child {
+		width: 45%;
+	}
+}

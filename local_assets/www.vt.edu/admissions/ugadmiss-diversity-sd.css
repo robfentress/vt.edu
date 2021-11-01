@@ -1,0 +1,253 @@
+
+/* --------------------------------------------------------
+Diversity Staff Dir
+----------------------------------------------------------*/
+	
+.ugadmiss.oua-div-staff-dir nav {
+	margin-bottom: 0px !important;
+}
+
+	/* FOR IE */
+
+	/* HEADERS */
+
+		.ugadmiss.oua-div-staff-dir .content-col-start {
+			margin-bottom: unset;
+		}
+		.ugadmiss.oua-div-staff-dir .header-image-container {
+			text-align: left;
+		}
+
+	/*================= */
+
+		@keyframes clickable {
+			from {
+				background-color: inherit;
+			}
+			to {
+				background-color: #508590;
+				color: #fff;
+			}
+		}
+		@-webkit-keyframes clickable {
+			from {
+				background-color: inherit;
+			}
+			to {
+				background-color: #508590;
+				color: #fff;
+			}
+		}
+		@-moz-keyframes clickable {
+			from {
+				background-color: inherit;
+			}
+			to {
+				background-color: #508590;
+				color: #fff;
+			}
+		}
+		@-o-keyframes clickable {
+			from {
+				background-color: inherit;
+			}
+			to {
+				background-color: #508590;
+				color: #fff;
+			}
+		}
+
+	/* CLICKABLE DIVS */
+
+		.ugadmiss.oua-div-staff-dir .clickable:hover {
+			background-color: #508590;
+			color:white;
+		}
+		.ugadmiss.oua-div-staff-dir .clickable:hover {
+			animation-name: clickable;
+			animation-duration: 0.25s;
+			animation-timing-function: ease;
+			-webkit-animation-name: clickable;
+			-webkit-animation-duration: 0.25s;
+			-webkit-animation-timing-function: ease;
+			-moz-animation-name: clickable;
+			-moz-animation-duration: 0.25s;
+			-moz-animation-timing-function: ease;
+			-o-animation-name: clickable;
+			-o-animation-duration: 0.25s;
+			-o-animation-timing-function: ease;
+		}
+
+	/* BUTTONS */
+
+		/* HEADER BUTTONS */
+
+			.ugadmiss.oua-div-staff-dir .header-image-container button {
+				font-size: 18px;
+				padding:15px;
+				background-color: rgba(134, 31, 65, 1) !important;
+				border: none !important;
+			}
+			.ugadmiss.oua-div-staff-dir .header-image-container button:not(:last-of-type) {
+				margin-right:10px;
+			}
+			.ugadmiss.oua-div-staff-dir .header-image-container button:hover {
+				background-color: #E87722 !important;
+			}
+			.ugadmiss.oua-div-staff-dir .header-image-container a {
+				color:inherit;
+				text-decoration: underline;
+			}
+
+	/* GLOBAL BLOCK */
+
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row {
+			display: flex;
+			display: -webkit-flex;
+		}
+
+	/* LIST BLOCK */
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container {
+			background-color: #E5E1E6;
+		}
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container .cell-bg {
+			padding: 15px;
+		}
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container .cell-bg .text {
+			margin-bottom: unset;
+		}
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div {
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div:not(:last-of-type) {
+			border-right: 1px dashed  #861F41;
+		}
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div > .vt-col > .vtcontainer:not(:first-of-type) {
+			/* border-top: 1px dashed #861F41; */
+		}
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div > .vt-col > .vtcontainer {
+			margin-bottom:unset;
+			min-height: 100px;
+		}
+		.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div > .vt-col > .vtcontainer > .cell-bg .pyramid-text p {
+			margin-bottom:0px;
+		}
+	
+	/* FOR MOBILE */
+
+		@media only screen and (max-width: 767px) {
+			.ugadmiss.oua-div-staff-dir .header-image-container {
+				padding: 15px !important;
+				margin: unset !important;
+				background-position: 49% !important;
+			}
+			.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row {
+				-webkit-flex-wrap: wrap; /*Safari 6.1+*/
+			}
+			.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div {
+				width: 100%;
+			}
+			.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div > .vt-col > .vtcontainer {
+				margin-bottom: unset !important;
+			}
+			.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div > .vt-col .cell-bg .text {
+				padding-top: 15px;
+				padding-bottom: 40px;
+			}
+			.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div > .vt-col > .vtcontainer {
+				border-top: 1px dashed #861F41;
+			}
+			.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container .cell-bg {
+				/* inline also */
+				border-top: 1px dashed #861F41;
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+			.ugadmiss.oua-div-staff-dir .header-image-container {
+				padding: 0px !important;
+			}
+			.ugadmiss.oua-div-staff-dir .header-image-container button {
+				display: block;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				width: 100%;
+			}
+			.ugadmiss.oua-div-staff-dir .header-image-container > .vt-vtcontainer-content {
+				background-color: rgba(0,0,0,0.5);
+				padding: 15px;
+				width: 100%;
+			}
+		}
+
+	/* FOR DESKTOP */
+
+		@media only screen and (min-width: 768px) {
+
+			/*MOBILE HEADER STUFF*/
+			.ugadmiss.oua-div-staff-dir .filter-list p {
+				font-size: 12px;
+			}
+			.ugadmiss.oua-div-staff-dir .header-image-container > .vt-vtcontainer-content {
+				margin-left: 3%;
+			}
+			.ugadmiss.oua-div-staff-dir .header-image-container > .vt-vtcontainer-content {
+				background: rgba(0,0,0,0.5);
+				padding: 30px 30px 0px 30px;
+				display: inline-block;
+				width: 50%;
+			}
+			.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div > .vt-col > .vtcontainer > .cell-bg .pyramid-text h3,
+			.ugadmiss.oua-div-staff-dir .vt-horizontalStack-container > .row > div > .vt-col > .vtcontainer > .cell-bg .pyramid-text h2 {
+				margin-top:0px;
+			}
+		}
+
+/* --------------------------------------------------------
+Diversity Directory Bio Tags
+----------------------------------------------------------*/
+
+	.ugadmiss.vt-bio.oua-div-staff-dir nav {
+		margin-bottom: 0px !important;
+	}
+
+	.ugadmiss.vt-bio.oua-div-staff-dir .vt-tagcloud {
+		display: block;
+	}
+	.ugadmiss.vt-bio.oua-div-staff-dir .vt-tagcloud ul li {
+		list-style-type: none;
+		margin-right: unset;
+		margin-bottom: unset;
+		margin-top: 8px;
+		float: left;
+	}
+	.ugadmiss.vt-bio.oua-div-staff-dir .vt-tagcloud ul li a {
+		font-size: 14px;
+		padding: unset;
+		color: unset;
+		background-color: unset;
+	}
+	.ugadmiss.vt-bio.oua-div-staff-dir .vt-tagcloud ul li a:hover {
+		color:#00417a; /* Cadet Blue */
+	}
+
+	.ugadmiss.vt-bio.oua-div-staff-dir .vt-tagcloud ul li a:before {
+		content: unset;
+		font-family: unset;
+		padding-right: unset;
+	}
+	.ugadmiss.vt-bio.oua-div-staff-dir .vt-tagcloud ul li:after {
+		content:", ";
+		white-space: pre;
+	}
+	.ugadmiss.vt-bio.oua-div-staff-dir .vt-tagcloud ul li:last-of-type:after {
+		content:unset;
+		white-space: unset;
+	}
+	.ugadmiss.vt-bio.oua-div-staff-dir .list-table-no-title-row thead {
+		display: none;
+	}
+	.ugadmiss.vt-bio.oua-div-staff-dir .list-table-no-title-row.middle-align-name-col tbody .item .vt-list-table-title,
+	.ugadmiss.vt-bio.oua-div-staff-dir .list-table-no-title-row.middle-align-name-col tbody .item .vt-list-table-description {
+		vertical-align: middle;
+	}

@@ -1,0 +1,605 @@
+
+
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+    <head><title>
+	Self-Reported Academic Record | Scarlet Computing Solutions (scarletcs.com)
+</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="https://srar.selfreportedtranscript.com/themes/SCS2018/css/ie/html5shiv.js"></script><![endif]-->
+		<script src="https://srar.selfreportedtranscript.com/themes/SCS2018/js/jquery.min.js"></script>
+		<script src="https://srar.selfreportedtranscript.com/themes/SCS2018/js/jquery.dropotron.min.js"></script>
+		<script src="https://srar.selfreportedtranscript.com/themes/SCS2018/js/skel.min.js"></script>
+		<script src="https://srar.selfreportedtranscript.com/themes/SCS2018/js/skel-layers.min.js"></script>
+		
+		<noscript>
+			<link rel="stylesheet" href="https://srar.selfreportedtranscript.com/themes/SCS2018/css/skel.css"/>
+			<link rel="stylesheet" href="https://srar.selfreportedtranscript.com/themes/SCS2018/css/style.css"/>
+			<link rel="stylesheet" href="https://srar.selfreportedtranscript.com/themes/SCS2018/css/style-wide.css"/>
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="https://srar.selfreportedtranscript.com/themes/SCS2018/css/ie/v8.css"/><![endif]-->
+
+        <script>
+            (function ($) {
+
+                skel.init({
+                    reset: 'full',
+                    breakpoints: {
+                        global: { range: '*', href: 'https://srar.selfreportedtranscript.com/themes/SCS2018/css/style.css', containers: 1400, grid: { gutters: 50 } },
+                        wide: { range: '-1680', href: 'https://srar.selfreportedtranscript.com/themes/SCS2018/css/style-wide.css', containers: 1200, grid: { gutters: 40 } },
+                        normal: { range: '-1280', href: 'https://srar.selfreportedtranscript.com/themes/SCS2018/css/style-normal.css', containers: 960, grid: { gutters: 30 }, viewport: { scalable: false } },
+                        narrow: { range: '-980', href: 'https://srar.selfreportedtranscript.com/themes/SCS2018/css/style-narrow.css', containers: '95%' },
+                        narrower: { range: '-840', href: 'https://srar.selfreportedtranscript.com/themes/SCS2018/css/style-narrower.css', containers: '95%!', grid: { zoom: 2 } },
+                        mobile: { range: '-736', href: 'https://srar.selfreportedtranscript.com/themes/SCS2018/css/style-mobile.css', containers: '90%!', grid: { gutters: 20 } },
+                        mobilep: { range: '-480', href: 'https://srar.selfreportedtranscript.com/themes/SCS2018/css/style-mobilep.css', grid: { zoom: 3 }, containers: '100%' }
+                    },
+                    plugins: {
+                        layers: {
+                            config: {
+                                mode: 'transform'
+                            },
+                            navPanel: {
+                                animation: 'revealX',
+                                breakpoints: 'narrower',
+                                clickToHide: true,
+                                height: '100%',
+                                hidden: true,
+                                html: '<div data-action="navList" data-args="nav"></div>',
+                                orientation: 'vertical',
+                                position: 'top-left',
+                                side: 'left',
+                                width: 275
+                            },
+                            titleBar: {
+                                breakpoints: 'narrower',
+                                height: 44,
+                                html: '<span class="toggle" data-action="toggleLayer" data-args="navPanel"></span><span class="title" data-action="copyHTML" data-args="logo"></span>',
+                                position: 'top-left',
+                                side: 'top',
+                                width: '100%'
+                            }
+                        }
+                    }
+                });
+
+                $(function () {
+
+                    var $window = $(window),
+                        $body = $('body');
+
+                    // Disable animations/transitions until the page has loaded.
+                    $body.addClass('is-loading');
+
+                    $window.on('load', function () {
+                        $body.removeClass('is-loading');
+                    });
+
+                    // Forms (IE<10).
+                    var $form = $('form');
+                    if ($form.length > 0) {
+
+                        $form.find('.form-button-submit')
+                            .on('click', function () {
+                                $(this).parents('form').submit();
+                                return false;
+                            });
+
+                        if (skel.vars.IEVersion < 10) {
+                            //$.fn.n33_formerize = function () { var _fakes = new Array(), _form = $(this); _form.find('input[type=text],textarea').each(function () { var e = $(this); if (e.val() == '' || e.val() == e.attr('placeholder')) { e.addClass('formerize-placeholder'); e.val(e.attr('placeholder')); } }).blur(function () { var e = $(this); if (e.attr('name').match(/_fakeformerizefield$/)) return; if (e.val() == '') { e.addClass('formerize-placeholder'); e.val(e.attr('placeholder')); } }).focus(function () { var e = $(this); if (e.attr('name').match(/_fakeformerizefield$/)) return; if (e.val() == e.attr('placeholder')) { e.removeClass('formerize-placeholder'); e.val(''); } }); _form.find('input[type=password]').each(function () { var e = $(this); var x = $($('<div>').append(e.clone()).remove().html().replace(/type="password"/i, 'type="text"').replace(/type=password/i, 'type=text')); if (e.attr('id') != '') x.attr('id', e.attr('id') + '_fakeformerizefield'); if (e.attr('name') != '') x.attr('name', e.attr('name') + '_fakeformerizefield'); x.addClass('formerize-placeholder').val(x.attr('placeholder')).insertAfter(e); if (e.val() == '') e.hide(); else x.hide(); e.blur(function (event) { event.preventDefault(); var e = $(this); var x = e.parent().find('input[name=' + e.attr('name') + '_fakeformerizefield]'); if (e.val() == '') { e.hide(); x.show(); } }); x.focus(function (event) { event.preventDefault(); var x = $(this); var e = x.parent().find('input[name=' + x.attr('name').replace('_fakeformerizefield', '') + ']'); x.hide(); e.show().focus(); }); x.keypress(function (event) { event.preventDefault(); x.val(''); }); }); _form.submit(function () { $(this).find('input[type=text],input[type=password],textarea').each(function (event) { var e = $(this); if (e.attr('name').match(/_fakeformerizefield$/)) e.attr('name', ''); if (e.val() == e.attr('placeholder')) { e.removeClass('formerize-placeholder'); e.val(''); } }); }).bind("reset", function (event) { event.preventDefault(); $(this).find('select').val($('option:first').val()); $(this).find('input,textarea').each(function () { var e = $(this); var x; e.removeClass('formerize-placeholder'); switch (this.type) { case 'submit': case 'reset': break; case 'password': e.val(e.attr('defaultValue')); x = e.parent().find('input[name=' + e.attr('name') + '_fakeformerizefield]'); if (e.val() == '') { e.hide(); x.show(); } else { e.show(); x.hide(); } break; case 'checkbox': case 'radio': e.attr('checked', e.attr('defaultValue')); break; case 'text': case 'textarea': e.val(e.attr('defaultValue')); if (e.val() == '') { e.addClass('formerize-placeholder'); e.val(e.attr('placeholder')); } break; default: e.val(e.attr('defaultValue')); break; } }); window.setTimeout(function () { for (x in _fakes) _fakes[x].trigger('formerize_sync'); }, 10); }); return _form; };
+                            //$form.n33_formerize();
+                        }
+
+                    }
+
+                    // Dropdowns.
+                    $('#nav > ul').dropotron({
+                        offsetY: -15,
+                        hoverDelay: 0,
+                        alignment: 'center'
+                    });
+
+                });
+
+            })(jQuery);
+        </script>
+
+        <link rel="icon" type="image/png" href="https://srar.selfreportedtranscript.com/themes/SCS2018/images/seal.png"/>
+
+        <link href="https://srar.selfreportedtranscript.com/WebResource.axd?d=lhhVNv_l-sAnqACU5rcWirypsUpTb7EZHXPHy7xeKV30tsD5OBEiFvvIpQBsRivSTu0NjUiKV0-zaDxul9ssLgaOGZnw2Rk0FowCeB4PoFlOGl0Yf2DrEc6YN_A1&amp;t=636619803660000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="https://srar.selfreportedtranscript.com/WebResource.axd?d=tspB-9dQzBULGGPSLmG5AIKZaZ-byYGqHUbTnO-pPpaW7AQo2AfxX-wzIlkcId3atQYGNBAsQpdMeUQigfSXOuzge4MlvcpFFTvebJQruWd90FW0G1kfQOzO9oXvz7sMYkCIRjG68QO6aThYlWbpq-7bncI1&amp;t=636619803660000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+
+    <script>
+        function openRadWindowCenter(url, width, height) {
+            window.scrollTo(0, 0);
+            var oWnd = radopen("https://srar.selfreportedtranscript.com/" + url, null);
+            oWnd.setSize(width, height);
+            oWnd.set_modal(!oWnd.get_modal());
+            oWnd.center();
+            oWnd.set_visibleStatusbar(false);
+            oWnd.add_close(OnClientClose);
+            oWnd.set_behaviors();
+        }
+
+        function openRadWindowCenterPercent(url, percentage) {
+            window.scrollTo(0, 0);
+            var oWnd = radopen("https://srar.selfreportedtranscript.com/" + url, null);
+            oWnd.set_modal(!oWnd.get_modal());
+            oWnd.center();
+            oWnd.set_visibleStatusbar(false);
+            oWnd.add_close(OnClientClose);
+            oWnd.set_behaviors();
+
+            var viewportWidth = $(window).width();
+            var viewportHeight = $(window).height();
+            oWnd.setSize(Math.ceil(viewportWidth * percentage / 100), Math.ceil(viewportHeight * percentage / 100));
+            oWnd.center();
+        }
+
+
+        function openRadWindowFull(url) {
+
+            //this is strictly due to improper CSS logic somewhere in the full screen RadWindow render
+            //check for safari
+            var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+            if (!isSafari) {
+                window.scrollTo(0, 0);
+                var oWnd = radopen("https://srar.selfreportedtranscript.com/" + url, null);
+                oWnd.setSize(1024, 768);
+                oWnd.set_modal(!oWnd.get_modal());
+                oWnd.maximize();
+                oWnd.set_visibleStatusbar(false);
+                oWnd.add_close(OnClientClose);
+                oWnd.set_behaviors();
+                oWnd.autoSize();
+            }
+
+            else {
+                //if using Safari - just use a centered RadWindow set to 100% size
+                window.scrollTo(0, 0);
+                var oWnd = radopen("https://srar.selfreportedtranscript.com/" + url, null);
+                oWnd.set_modal(!oWnd.get_modal());
+                oWnd.center();
+                oWnd.set_visibleStatusbar(false);
+                oWnd.add_close(OnClientClose);
+                oWnd.set_behaviors();
+
+                var viewportWidth = $(window).width();
+                var viewportHeight = $(window).height();
+                oWnd.setSize(Math.ceil(viewportWidth * 100 / 100), Math.ceil(viewportHeight * 100 / 100));
+                oWnd.center();
+            }
+        }
+
+        function OnClientClose(oWnd) {
+            oWnd.setUrl("about:blank"); // Sets url to blank 
+            oWnd.remove_close(OnClientClose); //remove the close handler - it will be set again on the next opening 
+        }
+
+        function setWindowsize() {
+            
+        }
+    </script>
+
+    <!--CSS Overrides//-->
+    <style>
+    a.credentials
+	{
+		color: #EE7623;	
+        background-color: #FFFFFF;
+	}
+
+    a.rgCurrentPage
+    {
+        background-color: #8A1E41 !important;
+        color: #FFFFFF !important;
+    }
+
+    .credential_font
+    {
+	    color:#8A1E41;
+    }
+
+    input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		background-color: #8A1E41;
+		border:1px solid #8A1E41;
+		color: #FFFFFF;
+	}
+
+    input[type="submit"].alt,
+	input[type="reset"].alt,
+	input[type="button"].alt,
+	.button.alt {
+		border:1px solid #8A1E41;
+        background-color: #FFFFFF;
+		color: #8A1E41;
+	}
+
+    #nav {
+        background-color:#FFFFFF; 
+	}
+
+    #nav > ul > li.current a {
+		color: #8A1E41;
+	}
+
+    #nav > ul > li a {
+		color: #8A1E41;
+	}
+
+    /*Nav Arrows*/
+    #nav > ul > li a:before { 
+	    border-left: 20px solid #EE7623;
+    }
+    #nav > ul > li a:after { 
+	    border-left: 19px solid #FFFFFF;
+    }
+
+    .modify_header
+    {
+	    background-color:#8A1E41;
+    }
+
+    .column_header
+    {
+	    background-color:#DDDDDD;
+	    color:#000000 !Important;
+    }
+
+    .theme_default
+    {
+	    background-color:#c1bbab;
+    }
+
+    .td_header
+    {
+	    color:#FFFFFF;
+    }
+
+    .mainLayoutTitle
+    {
+	    background-color: #8A1E41;
+    }
+
+    TABLE.ReportDetailTableGray TH {
+	    COLOR: #8A1E41;
+	    BACKGROUND: #FFFFFF;
+    }
+
+    .ReportDetailTH
+    {
+	    COLOR: #8A1E41;
+	    BACKGROUND: #FFFFFF;
+    }
+
+    #titleBar{
+        background-color: #FFFFFF !important;
+    }
+
+    #titleBar .title{
+        color: #8A1E41 !important;
+    }
+
+    #titleBar .toggle:before{
+        color: #8A1E41 !important;
+    }
+
+    #navPanel {
+        background-color: #FFFFFF !important;
+    }
+
+    #navPanel .link {
+        color: #8A1E41 !important;
+    }
+    </style>
+
+	<body>
+
+    <form name="aspnetForm" method="POST" action="srar.html" id="aspnetForm" autocomplete="off" title="National SRAR">
+<input type="hidden" name="ctl00_ScriptManager1_TSM" id="ctl00_ScriptManager1_TSM" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="UGZfmFIdL+e6tjbE1kjmdcp+sv71WbVx6M2akVJdFt2VyPXR1XUPTl+VcZwXiMU7g4yV7AC0Y78xnav+JUHlpnoCIFTdo2zMbwa/bCchfUHykYSP9t6Dgc8Gaj70yFbA5bBIukYrmeo+6XA17L9Tyh6/bdNJa7b3sg3S0rm5rTX3zJGraBI9JEva037IH9rhByG6MRqD/ms60VpAYarlx/AMFl7MSJYcqXGU//kHKfnmtxMT07MC8kGmQDZnH7kva6vSgyiUsicOPsByl+Cwd6eJBYZZNpnCJ756JBKGB0jnSszYHxzsZ9B3VAOT1vr8mVpBodVESCuphKcERsXKEwPnbXPqkP84sSGaIwDQst3Ydg0W88EWVpzZN5mH/YDYLNrfNdyNnV7wwjUq0lPfqIXsP+GELa+vmryea+Ehr+3zdbxN8D7GYD+asZPzyJ8ll7ashmQwLf8b6h7muqN8wDUaQ4L9xyxmvujE6XzdGFncKGBPGMWAbljFcXPSXEeAVr2c54ivOTaXYh1NrpuZcJh8DGIKoVshP1+xIRi95WXtUbpmmwwEBA5CyERj452tkytXdIGMbfRLP1bbmwXZRpSpuPTwWySiy4fiJoP+jyqv/IoJHzUQTaYtSCN0L6aaiT57dTG5vFaUmS28KoUBMspW8cVsCpunAexWYCKWoBsYSkJB5/hx/BVxdJn+I4UmP/fNY3PC5Siv+jyhGOm/wdCEb28FHCLfWV2tLy4hSrn/pedHaxhXe08lUjka9RIoGz4NRuVSjJkGMxkRp3WGRqbhF1ZavJ/nwDQci7pw7bop6hbFnT0u5eumzMPGF1ro1VFCeheoZiYwbNtd6vZnHn2RYUmL32spTWAnIVubKhXPmDmbdcvU57G6GZgp37C3LXip86L/jFnK+20MM1oS9I+DRu7A89gStTwV0k4ZjhsRRWUeU26qqhZtqq/26x0vsxkRA8sp5YE6lXPwrUMU0BGWfybQMP9PtCnBbDsMAACnviR3" />
+
+
+<script src="https://srar.selfreportedtranscript.com/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_ScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a2caafa8b-6f58-4a66-a3cd-4d77ee6a1707%3aea597d4b%3bTelerik.Web.UI%2c+Version%3d2018.2.516.40%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3a52a69ec9-3fd7-4769-8347-dd4e09a8f368%3a16e4e7cd%3af7645509%3a24ee1bba%3ab2e06756%3a92fe8ea0%3afa31b949%3a4877f69a%3a33715776%3ac128760b%3a874f8ea2%3af46195d3%3a19620875%3a490a9d4e%3abd8f85e4" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="VSQZKxmaO3tRzGH4eM30tohI3cScGdo+8glCmFrfDMS4qmBshgM/VYYSiOsnDORwoHT3OKsc5n0iYP9jnwuxW1Fqz85ekEI9STtJOi1WKqfR6Esz0aOh0ckLgjHDYg+qJaSbTPzb5boDWcSfXGUTyFfMFKfHIWEV5eNFKU6pPAQ2GS14R/1VxLhzzsXwrV+25iA5tlPavv7Sbqz9/fVDbdTaH77k0X21BZVbmQ7SsimIohqCRo4R4JLtIyM=" />
+    <a class="accessible" href="srar.html#main" style="display:none">[Skip to Content]</a>
+    
+            
+            <span id="ru_logo_banner">
+		    		<table role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF">
+                    <tr>
+                        <td colspan="2" style="background-color:#8A1E41;padding-left:15px">
+                            &nbsp;
+                        </td>
+                    </tr>
+					<tr>
+					<td width="30%" style="vertical-align:center;padding-top:10px;padding-left:6px;text-align:left"><img src="https://s3.amazonaws.com/scarletcs-bucket2/public/starsadmin/images/logos/uploads/78CADED4-A1A6-4B5F-BAC2-B86D15CE8D0A.png"  height="75px" alt="Logo"/></td>
+					<td width="70%" style="vertical-align:bottom;text-align:right">
+                        
+                            
+                        <br/>
+					</td>
+					</tr>
+					
+					</table>
+			</span>
+
+            <!--
+            <span id="ru_logo_mobile">
+                <table role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" style="background-color:#ffffff">
+                    <tr>
+                        <td style="vertical-align:center"><img src="https://srar.selfreportedtranscript.com/themes/stars/images/stars-logo.png" alt="Logo"/></td>
+                    </tr>
+                </table>
+            </span>
+			//-->
+        		
+			<div id="header">
+						
+				<!-- Logo -->
+					<span id="logo" style="display:none">
+                        <table role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td style="width:10%;vertical-align:top;text-align:left;padding-top:5px;padding-left:3px"><img src="https://srar.selfreportedtranscript.com/themes/SCS2018/images/seal.png" style="max-height:50px;max-width:30px" alt="Seal"/></td>
+                            <td style="width:60%;vertical-align:top;text-align:center;">SRAR</td>
+                            <td style="width:30%;vertical-align:top;text-align:right">
+                                
+                            </td>
+                        </tr>
+                        </table>
+					</span>
+				<!-- Nav -->
+					
+                        <table role="presentation" width="100%" style="border-top:2px solid #8A1E41;border-bottom:2px solid #8A1E41">
+                        <tr>
+                            <td style="text-align:left;color:#8A1E41;font-weight:bold;background-color:#FFFFFF;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                SELF-REPORTED ACADEMIC RECORD
+                            </td>
+                            <td style="text-align:right">
+                                <nav id="nav">
+                                
+<style>
+	#titleBar .toggle {
+		display:none;   /*Note - this hides the hamburger and should only be used on pages in which there is no navigation*/
+	}
+</style>
+
+
+
+                                </nav>
+                            </td>
+                        </tr>
+                        </table>
+						
+					
+
+			</div>
+			
+		<!-- Main -->
+			<section class="wrapper style1">
+				<div class="container">
+					<div class="row 200%">
+						<div class="4u 12u(2)">
+							<div id="sidebar">
+
+								<!-- Sidebar -->
+							
+                                    
+<section>
+	<p>
+	Welcome to the Self-Reported Academic Record (SRAR).
+    <br/><br/>
+    The SRAR allows you to enter, track, and submit your academic record electronically to participating colleges and universities.
+    
+	</p>
+    <br />
+    
+    <p>
+    Did you know you could start your SRAR as early as 9th grade? <a href='https://srar.selfreportedtranscript.com/createaccount.aspx' alt='create'>create an account</a> today to get started.
+    </p>
+    
+	<footer>
+											
+	</footer>
+</section>
+
+
+						
+							</div>
+						</div>
+						<div class="8u  12u(2) important(2)">
+							<div id="content">
+
+								<!-- Content -->
+							        <a name="main" title="Main Content"></a>
+									<article>
+
+                                        
+    <input type="hidden" name="ctl00$mainContent$pt_ceeb" id="ctl00_mainContent_pt_ceeb" />
+    <input type="hidden" name="ctl00$mainContent$pt_sid" id="ctl00_mainContent_pt_sid" />
+    <input type="hidden" name="ctl00$mainContent$pt_key" id="ctl00_mainContent_pt_key" />
+
+    
+    
+    <header>
+		<h2>Self-Reported Academic Record</h2>
+		<p></p>
+	</header>
+										
+	<p>
+	<table width="100%" align="center" cellpadding="0" cellspacing="0" style="background-color:#f9f9f9;border:1px solid #999999">
+	<tr>
+        <td colspan="2">&nbsp;</td>
+	</tr>
+    <th class="LoginBand" colspan="2" style="text-align:left">&nbsp;&nbsp;<span style="color:#ffffff;font-weight:bold">PLEASE LOG IN</span></th>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+	</tr>
+    <tr>
+	<td width="15%" style="vertical-align:top">
+		&nbsp;&nbsp;<strong><label for="ctl00_mainContent_email">Email</label></strong>
+	</td>
+	<td width="85%" valign="top">
+		<input name="ctl00$mainContent$email" type="text" id="ctl00_mainContent_email" />
+        &nbsp;
+        &nbsp;
+	</td>
+	</tr>
+	<tr><td colspan="2">&nbsp;</td></tr>
+	<tr>
+	<td valign="top" style="vertical-align:top">
+		&nbsp;&nbsp;<strong><label for="ctl00_mainContent_password">Password</label></strong>
+	</td>
+	<td valign="top">
+		<input name="ctl00$mainContent$password" type="password" id="ctl00_mainContent_password" />
+        &nbsp;
+	</td>
+	</tr>
+	<tr><td colspan="2">&nbsp;</td></tr>
+	<tr>
+	<td colspan="2" align="right">
+	<input onclick="if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(''); " name="ctl00$mainContent$btn_submit" type="submit" id="ctl00_mainContent_btn_submit" class="buttons_action" value="Login ▶" title="Login" />&nbsp;&nbsp;
+	&nbsp;&nbsp;
+	<br/>
+	&nbsp;
+	</td>
+	</tr>
+	</table>
+	</p>
+	
+    <br /><br />
+    									
+	<h3>Quick Links</h3>
+	<p>
+	<A HREF="https://srar.selfreportedtranscript.com/PasswordReminder.aspx" class="inLineLink">Forgot My Password</A><br>
+    <A HREF="https://srar.selfreportedtranscript.com/CreateAccount.aspx?pt_ceeb=6D54BC1C9013D0FC&amp;pt_sid=" class="inLineLink">Create a New Account</A><br>
+    
+	</p>
+
+    
+
+									</article>
+						
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>			
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="3u 6u(2) 12u$(3)">
+							
+                            
+						</section>
+                    </div>
+                </div>
+				<!-- Icons -->
+					
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+                            <li>Copyright &copy;2018, Scarlet Computing Solutions, LLC. All rights reserved.</li>
+						</ul>
+					</div>
+
+			</div>
+
+    <div id="ctl00_RadWindowManager1" style="display:none;">
+	<!-- 2018.2.516.40 --><div id="ctl00_RadWindow1" style="z-index:9000;display:none;">
+		<div id="ctl00_RadWindow1_C" style="display:none;">
+
+		</div><input id="ctl00_RadWindow1_ClientState" name="ctl00_RadWindow1_ClientState" type="hidden" />
+	</div><div id="ctl00_RadWindowManager1_alerttemplate" style="display:none;">
+		<div class="rwDialogPopup radalert">			
+			<div class="rwDialogText">
+			{1}				
+			</div>
+			
+			<div>
+				<a  onclick="$find('{0}').close(true);"
+				class="rwPopupButton" href="javascript:void(0);">
+					<span class="rwOuterSpan">
+						<span class="rwInnerSpan">##LOC[OK]##</span>
+					</span>
+				</a>				
+			</div>
+		</div>
+		</div><div id="ctl00_RadWindowManager1_prompttemplate" style="display:none;">
+		 <div class="rwDialogPopup radprompt">			
+			    <div class="rwDialogText">
+			    {1}				
+			    </div>		
+			    <div>
+				    <script type="text/javascript">
+				    function RadWindowprompt_detectenter(id, ev, input)
+				    {							
+					    if (!ev) ev = window.event;                
+					    if (ev.keyCode == 13)
+					    {															        
+					        var but = input.parentNode.parentNode.getElementsByTagName("A")[0];					        
+					        if (but)
+						    {							
+							    if (but.click) but.click();
+							    else if (but.onclick)
+							    {
+							        but.focus(); var click = but.onclick; but.onclick = null; if (click) click.call(but);							 
+							    }
+						    }
+					       return false;
+					    } 
+					    else return true;
+				    }	 
+				    </script>
+				    <input title="Enter Value" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" type="text"  class="rwDialogInput" value="{2}" />
+			    </div>
+			    <div>
+				    <a onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value);"				
+					    class="rwPopupButton" href="javascript:void(0);" ><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+				    <a onclick="$find('{0}').close(null);" class="rwPopupButton"  href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+			    </div>
+		    </div>				       
+		</div><div id="ctl00_RadWindowManager1_confirmtemplate" style="display:none;">
+		<div class="rwDialogPopup radconfirm">			
+			<div class="rwDialogText">
+			{1}				
+			</div>						
+			<div>
+				<a onclick="$find('{0}').close(true);"  class="rwPopupButton" href="javascript:void(0);" ><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[OK]##</span></span></a>
+				<a onclick="$find('{0}').close(false);" class="rwPopupButton"  href="javascript:void(0);"><span class="rwOuterSpan"><span class="rwInnerSpan">##LOC[Cancel]##</span></span></a>
+			</div>
+		</div>		
+		</div><input id="ctl00_RadWindowManager1_ClientState" name="ctl00_RadWindowManager1_ClientState" type="hidden" />
+</div>
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+window.__TsmHiddenField = $get('ctl00_ScriptManager1_TSM');Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":false,"_stylezindex":"9000","clientStateFieldID":"ctl00_RadWindow1_ClientState","formID":"aspnetForm","iconUrl":"","minimizeIconUrl":"","name":"RadWindow1","skin":"Windows7"}, null, null, $get("ctl00_RadWindow1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"clientStateFieldID":"ctl00_RadWindowManager1_ClientState","formID":"aspnetForm","iconUrl":"","minimizeIconUrl":"","name":"RadWindowManager1","skin":"Windows7","windowControls":"['ctl00_RadWindow1']"}, null, {"child":"ctl00_RadWindow1"}, $get("ctl00_RadWindowManager1"));
+});
+//]]>
+</script>
+</form>
+	</body>
+
+    <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+    <script type="text/javascript" language="JavaScript1.1" src="https://srar.selfreportedtranscript.com/includes/overlib.js"></script>
+
+    <!--10.0.14.185//-->
+
+</html>

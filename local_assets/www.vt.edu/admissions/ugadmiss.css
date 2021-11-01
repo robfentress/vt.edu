@@ -1,0 +1,1481 @@
+@import "ugadmiss-home.css";
+@import "ugmajors.css";
+@import "res-table.css";
+@import "ugadmiss-diversity.css";
+
+/* @import "//www.assets.cms.vt.edu/font-awesome/archives/5.0.9/web-fonts-with-css/css/fontawesome-all.min.css"; */
+/* --------------------------------------------------------
+
+Some of these styles are a work in progress.
+Some are old and need to be removed. Working on it.
+- 2017-12-04 13:42:24
+
+----------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+	.ugadmiss .grid-container {
+		border-left:3px dashed #E87722;
+		padding: 1px 10px 1px 15px !important;
+		background: url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) right top no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) right bottom no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/grid-2x.png) center no-repeat !important;
+	}
+	.ugadmiss .grid-container .gridbox {
+		padding-right:10px !important;
+		margin-bottom: -15px;
+	}
+	.ugadmiss .grid-container[class~='palette-2'] .gridbox,
+	.ugadmiss .grid-container[class~='palette-3'] .gridbox {
+		padding: 1px 15px 1px 15px;
+	}
+	.ugadmiss .grid-container[class~='palette-2'] {
+		border-left:3px dashed #861F41;
+		background: url(../../../content/dam/vt_edu/admissions/gfx/dot-mrn-med.png) right bottom no-repeat,
+		url(../../../content/dam/vt_edu/admissions/gfx/dash-mgray-med.png) 350px 5% no-repeat,
+		url(../../../content/dam/vt_edu/admissions/gfx/grid-2x.png) center no-repeat !important;
+	}
+	.ugadmiss .grid-container[class~='palette-3'] {
+		border-left:3px dashed #861F41;
+		background: url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) right top no-repeat,
+		url(../../../content/dam/vt_edu/admissions/gfx/squares-mrn-med.png) 77% -23% no-repeat,
+		url(../../../content/dam/vt_edu/admissions/gfx/circle-mgray-lg.png) -13% 145% no-repeat,
+		url(../../../content/dam/vt_edu/admissions/gfx/grid-2x.png) center no-repeat !important;
+	}
+	.ugadmiss .grid-container[class~='palette-2'],
+	.ugadmiss .grid-container[class~='palette-3'] {
+		padding-top: 30px !important;
+	}
+	.ugadmiss .register_blip {
+		background:#FFFFFF url('../../../content/dam/vt_edu/admissions/images/ticket_small.png') no-repeat bottom right;
+	}
+	.ugadmiss .admiss-sub-links {
+		border: 0;
+	}
+	.ugadmiss .admiss-sub-links .social-media {
+		font-size: 2em;
+		line-height: unset;
+		float: unset;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.ugadmiss .grid-container {
+		padding: 30px 30px 1px 30px !important;
+		background: url(../../../content/dam/vt_edu/admissions/gfx/brkt-btm-org-top-a.png) left top / 36px 36px no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) right top no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) right bottom no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) left bottom no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/grid-2x.png) center no-repeat !important;
+	}
+	.ugadmiss .grid-container[class~='palette-2'] .gridbox,
+	.ugadmiss .grid-container[class~='palette-3'] .gridbox {
+		padding: 1px 30px 1px 30px;
+		/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+		box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 18px 0 rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 18px 0 rgba(0, 0, 0, 0.4);
+		-moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 18px 0 rgba(0, 0, 0, 0.4);
+	}
+	.ugadmiss .grid-container[class~='palette-3'] {
+		box-shadow: 0 0 20px 13px rgba(117,120,123,0.4) inset;
+		-webkit-box-shadow: 0 0 20px 13px rgba(117,120,123,0.4) inset;
+		-moz-box-shadow: 0 0 20px 13px rgba(117,120,123,0.4) inset;
+	}
+	.ugadmiss .grid-container .gridbox {
+		padding: 1px 0px 1px 0px;
+	}
+	.ugadmiss .grid-container .gridbox {
+		position: relative !important;
+	}
+	.ugadmiss .grid-container[class~='palette-2'] .gridbox .diag/* ,
+	.ugadmiss .grid-container[class~='palette-3'] .gridbox .diag */ {
+		display:block !important;
+	}
+	.register_blip {
+		background:#FFFFFF url('../../../content/dam/vt_edu/admissions/images/ticket_small.png') no-repeat top right;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.ugadmiss a.map-btn {
+		display: block;
+		margin-top: 10px;
+		text-align: center;
+	}
+}
+
+.ugadmiss .list-table-no-title-row thead {
+	display: none;
+}
+.ugadmiss .hide-this {
+	display: none !important;
+}
+.ugadmiss.no-nav-margin nav {
+	/* This is also declared in style sheets for specific pages (e.g. ugadmiss_diversity.css) */
+	margin-bottom: 0px !important;
+}
+.ugadmiss.no-mobile-side-nav .visible-side-nav {
+	/* When you have hidden the side nav in properties, but dont want to see the side nav in editor either (e.g. diversity-staff-directory.html) */
+	display:none;
+}
+
+.ugadmiss.hide-body-container .flypanels-content > .container {
+	display: none;
+}
+
+/* --------------------------------------------------------
+
+Graphics
+
+----------------------------------------------------------*/
+
+	.ugadmiss .grid-container .gridbox {
+		/* margin-top: -15px; */
+		margin-bottom: -10px;
+		color:#861F41;
+	}
+	.ugadmiss .grid-container .gridbox p {
+		font-weight: 500;
+	}
+	.ugadmiss .grid-container .gridbox div > p,
+	.ugadmiss .grid-container .gridbox div > ul > li {
+		margin: 10px 0px 0px 0px;
+	}
+	.ugadmiss .grid-container .gridbox h1,
+	.ugadmiss .grid-container .gridbox h2,
+	.ugadmiss .grid-container .gridbox h3 {
+		margin-top: -20px;
+	}
+	.ugadmiss .grid-container .gridbox h1,
+	.ugadmiss .grid-container .gridbox h2,
+	.ugadmiss .grid-container .gridbox h3 {
+		margin-bottom: unset !important;
+	}
+	.ugadmiss .palette-2 .gridbox h1,
+	.ugadmiss .palette-2 .grid-container .gridbox h2,
+	.ugadmiss .palette-2 .grid-container .gridbox h3,
+	.ugadmiss .palette-3 .gridbox h1,
+	.ugadmiss .palette-3 .grid-container .gridbox h2,
+	.ugadmiss .palette-3 .grid-container .gridbox h3 {
+		margin-top: initial;
+		margin-bottom: initial;
+	}
+	.ugadmiss .grid-container .gridbox a,
+	.ugadmiss .grid-container .gridbox a:active {
+		color:#003C71 !important;
+		text-decoration: underline !important;
+	}
+	.ugadmiss .grid-container .gridbox a:hover {
+		color:unset !important;
+		text-decoration: none !important;
+	}
+	.ugadmiss .grid-container {
+		background: url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) right top no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) right bottom no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/dot-org.png) left bottom no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/grid-2x.png) center no-repeat !important;
+		background-color: #fff;
+	}
+	.ugadmiss .grid-container[class~='palette-2'] {
+		background: url(../../../content/dam/vt_edu/admissions/gfx/dot-dgray-med.png) right top no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/brkt-btm-mrn.png) right bottom no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/dash-blue-med.png) -450px 93% no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/dash-mgray-med.png) 256px 33% no-repeat,
+			url(../../../content/dam/vt_edu/admissions/gfx/grid-2x.png) center no-repeat !important;
+	}
+	.ugadmiss .grid-container[class~='palette-2'] .diag {
+		background: url(../../../content/dam/vt_edu/admissions/gfx/diag-mrn-sm.png) !important;
+	}
+	.ugadmiss .grid-container[class~='palette-2'] .gridbox {
+		color: #fff;
+		background: rgba(117, 120, 123,0.75);
+	}
+	.ugadmiss .grid-container[class~='palette-3'] {
+		/* background: url(/content/dam/vt_edu/admissions/gfx/dot-org.png) right top no-repeat,
+			url(/content/dam/vt_edu/admissions/gfx/squares-mrn-med.png) 77% -23% no-repeat,
+			url(/content/dam/vt_edu/admissions/gfx/circle-mgray-lg.png) -1% 145% no-repeat,
+			url(/content/dam/vt_edu/admissions/gfx/brkt-btm-org.png) right bottom no-repeat,
+			url(/content/dam/vt_edu/admissions/gfx/grid-2x.png) center no-repeat !important; */
+		background: url(../../../content/dam/vt_edu/admissions/gfx/squares-mrn-med.png) 77% -23% no-repeat,
+		url(../../../content/dam/vt_edu/admissions/gfx/circle-mgray-lg.png) -1% 145% no-repeat,
+		url(../../../content/dam/vt_edu/admissions/gfx/grid-2x.png) center no-repeat !important;
+	}
+	.ugadmiss .grid-container[class~='palette-3'] .diag {
+		background: url(../../../content/dam/vt_edu/admissions/gfx/diag-org.png) !important;
+	}
+	.ugadmiss .grid-container[class~='palette-3'] .gridbox {
+		color: #000;
+		background: rgba(255,255,255,0.78);
+	}
+	.ugadmiss .grid-container .diag[class~='maroon'] {
+		background: url(../../../content/dam/vt_edu/admissions/gfx/diag-mrn-sm.png) !important;
+	}
+	.ugadmiss .grid-container .gridbox .diag {
+		background-image: url(../../../content/dam/vt_edu/admissions/gfx/diag-org.png); /* default */
+		height: 72px;
+		width: 72px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		top: -33px;
+		left:-40px;
+		display:none;
+	}
+
+
+/* --------------------------------------------------------
+
+PRE tags NOT DONE 2017-03-07 18:14:24
+
+----------------------------------------------------------*/
+	.ugadmiss  pre {
+		border: 2px solid #000;
+		background-color: #fff;
+		font-family: 'Courier', sans-serif;
+	}
+	.ugadmiss [class~='fixed-height'] pre {
+			overflow:auto;
+			/*height: 200px;*/
+	}
+
+	.ugadmiss [class~='fixed-height'] pre:hover {
+		height: auto;
+		z-index: 99;
+		overflow: auto;
+	}
+
+/* --------------------------------------------------------
+
+External Links
+
+----------------------------------------------------------*/
+
+	.ugadmiss a.ext::after {
+		content: "\f08e";
+		font-family: FontAwesome;
+		margin-left: 5px;
+		vertical-align: middle;
+	}
+
+	.ugadmiss a.ext:hover::after {
+		text-decoration: none;
+	}
+
+
+/* --------------------------------------------------------
+
+Scroll-to-top button
+
+----------------------------------------------------------*/
+
+	.ugadmiss .scroll-to-top-button {
+		color:#fff;
+		text-align: center;
+	}
+	.ugadmiss .scroll-to-top-button button {
+		font-family: gineso-condensed,sans-serif;
+		font-size: 35px;
+		font-weight: 300;
+		background:#8b1f41;
+		padding:20px;
+		border: 0px;
+	}
+	.ugadmiss .scroll-to-top-button button:hover {
+		background:#E87722;
+	}
+
+/* --------------------------------------------------------
+
+Regular Buttons
+2018-05-16 11:42:08
+----------------------------------------------------------*/
+
+	.ugadmiss .content button {
+		background-color: #E87722; /* default */
+		color: #fff;
+		display: inline-block;
+		border: none;
+		padding: 10px;
+		/* transition: all 0.5s; */
+	}
+	.ugadmiss .round-corners button {
+		border-radius: 8px !important;
+		-moz-border-radius:8px !important;
+		-webkit-border-radius:8px !important;
+	}
+
+
+	/* 2018-06-01 17:07:47 */
+
+	/* BUTTON COLORS */
+		.ugadmiss .button-color-b-orange button {
+			background-color: #E87722;
+		}
+		.ugadmiss .button-color-b-orange-web button {
+			background-color: #C64600;
+		}
+		.ugadmiss .button-color-hs button {
+			background-color: #75787B;
+		}
+		.ugadmiss .button-color-c-maroon button {
+			background-color: #861F41;
+		}
+		.ugadmiss .button-color-l-grey button {
+			background-color: #D7D2CB;
+			color:#000 !important;
+		}
+		.ugadmiss .button-color-s-smoke button {
+			background-color: #E5E1E6;
+			color:#861F41  !important;
+		}
+
+	/* HOVER COLORS */
+		.ugadmiss .parbase button:hover {
+			background-color: #861F41; /* default */
+			color: #fff !important;
+		}
+		.ugadmiss .button-hover-color-c-blue button:hover {
+			background-color:#003C71;
+		}
+		.ugadmiss .button-hover-color-c-maroon button:hover {
+			background-color: #861F41;
+		}
+		.ugadmiss .button-hover-color-l-grey button:hover {
+			background-color:#D7D2CB;
+			color: #000 !important;
+		}
+		.ugadmiss .button-hover-color-s-smoke button:hover {
+			background-color:#E5E1E6;
+			color: #000 !important;
+		}
+		.ugadmiss .button-hover-color-b-orange button:hover {
+			background-color: #E87722;
+			color: #fff !important;
+		}
+		.ugadmiss .button-hover-color-b-orange-web button:hover {
+			background-color: #C64600;
+			color: #fff !important;
+		}
+
+	/* Alignment */
+		.ugadmiss .content .center button { /* old */
+			text-align: center;
+			text-align: -webkit-center;
+		}
+		.ugadmiss .admiss-button-right {
+			text-align: right;
+			text-align: -webkit-right;
+		}
+		.ugadmiss .admiss-button-center {
+			text-align: center;
+			text-align: -webkit-center;
+		}
+	
+	.ugadmiss .admiss-button-lg button {
+		font-size: large !important;
+	}
+	.ugadmiss .admiss-button-xl button {
+		font-size: larger !important;
+	}
+	.ugadmiss .content .register button {
+		display: block;
+		font-family: 'Lato',sans-serif;
+		font-size: 2.0em;
+		font-weight: 300;
+		padding: 20px;
+		text-align: center;
+		border-radius: 7px;
+		-moz-border-radius:7px;
+		-webkit-border-radius:7px;
+	}
+	.ugadmiss .content button.readmore {
+		border: 0;
+		background: none;
+		color: #861F41 !important;
+		padding: 0px 5px;
+		margin: 0px;
+		font-size: small;
+	}
+	.ugadmiss .content span.readmore {
+		font-size: small !important;
+		text-decoration: none !important;
+		color: #861F41;
+	}
+
+/* --------------------------------------------------------
+
+Animated Buttons
+
+----------------------------------------------------------*/
+	.ugadmiss .animated-button p a {
+		display: inline-block;
+		border-radius: 8px;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+		background-color: #E87722;
+		border: none;
+		color: #FFFFFF !important;
+		text-align: center;
+		font-family: 'Lato',sans-serif;
+		font-size: 35px;
+		font-weight: 300;
+		padding: 20px;
+		width:auto;
+		/* transition: all 0.5s; */
+		cursor: pointer;
+		margin: 5px;
+		width: inherit !important;
+	}
+
+	.ugadmiss .animated-button p a span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		/* transition: 0.5s; */
+	}
+
+	.ugadmiss .animated-button p a span:after {
+		content: '\00bb';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		/* transition: 0.5s; */
+	}
+
+	.ugadmiss .animated-button p a:hover span {
+		padding-right: 25px;
+	}
+
+	.ugadmiss .animated-button p a:hover span:after {
+		opacity: 1;
+		right: 0;
+	}
+	.ugadmiss .animated-button[class~='maroon'] p a {
+		background-color: #660000;
+		/* Secondary colors
+		background-color: #980000;
+		background-color: #7A0000;
+		background-color: #5C0000;
+		background-color: #4C0000; */
+	}
+	.ugadmiss .animated-button[class~='blue'] p a {
+		background-color: #93a7b3;
+		/* Secondary colors
+		background-color: #557082;
+		background-color: #3c5b6f;
+		background-color: #12252c; */
+	}
+	.ugadmiss .animated-button[class~='green'] p a {
+		background-color: #9bb68f;
+		/* Secondary colors
+		background-color: #79946c;
+		background-color: #516f43;
+		background-color: #305020; */
+	}
+	.ugadmiss .animated-button[class~='gray'] p a {
+		background-color: #c2c1ba;
+		/* Secondary colors
+		background-color: #646464;
+		background-color: #404039;
+		background-color: #333333; */
+	}
+	.ugadmiss .animated-button[class~='gold'] p a {
+		background-color: #b47a1f;
+		/* Secondary colors
+		background-color: #a86107;
+		background-color: #8c5206;
+		background-color: #993300; */
+	}
+	.ugadmiss .animated-button[class~='orange'] p a {
+		/* default */
+		background-color: #ff6600;
+	}
+	.ugadmiss .animated-button[class~='cream'] p a {
+		/*background-color: #f5f5eb;
+		 Secondary colors
+		background-color: #edeada;
+		background-color: #dbd8bc;			
+		color: #000; */
+		background-color: #9d9879;
+	}
+	.ugadmiss .animated-button[class~='inline'] p {
+		display:inline-block;
+	}
+	.ugadmiss .animated-button[class~='center'] {
+		text-align: center;
+	}
+
+/* --------------------------------------------------------
+
+Map links
+
+----------------------------------------------------------*/
+	.ugadmiss a.map-btn {
+		color:#898989;
+		background:inherit;
+		border: 1px solid #898989;
+		padding: .3em.3em;
+		border-radius:7px;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+		font-size: .8em;
+	}
+	.ugadmiss a.map-btn::before {
+		content: "\f279"; /* DEFAULT: fa-map */
+		/* content: "\f041"; DEFAULT: fa-map-marker */
+		font-family: FontAwesome;
+		margin-right: .3em;
+	}
+	.ugadmiss a.map-btn:visited,
+	.ugadmiss a.map-btn:active {
+		text-decoration: none;
+	}
+	.ugadmiss a.map-btn:hover {
+		text-decoration: none;
+		color:#fff;
+		background:#333;
+	}
+
+/* --------------------------------------------------------
+
+Legend
+
+----------------------------------------------------------*/
+	
+	.ugadmiss .legend {
+		background-color: #eee;
+		padding: 0 10px;
+		border-radius:5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		font-size: 12px !important;
+		text-align: left;
+	}
+	.ugadmiss .legend p,
+	.ugadmiss .legend a,
+	.ugadmiss .legend a:link,
+	.ugadmiss .legend a:hover,
+	.ugadmiss .legend a:active,
+	.ugadmiss .legend a:visited {
+		font-size: inherit;
+	}
+	.ugadmiss .legend a:hover {
+		text-decoration: none !important;
+	}
+	.ugadmiss .legend[class~="right"] {
+		text-align: right;
+	}
+	.ugadmiss .legend[class~="center"] {
+		text-align: center;
+	}
+	.ugadmiss .legend[class~='dark'] {
+		background-color: #75787B; /* hokie stone */
+		color: #fff;
+	}
+	.ugadmiss .legend[class~='nobg'] {
+		background-color: transparent;
+		color: #000;
+	}
+	.ugadmiss p.legend {
+		margin-bottom:0px !important;
+	}
+
+	/* /VISIT/ ==============================================================================================*/
+
+		.ugadmiss .grouptour_blip {
+			background: url("https://secure.hosting.vt.edu/www.apps.admissions.vt.edu/global_assets/images/gray_fade.jpg") repeat-x scroll 0 0 #E5E5E5;
+			border: 1px solid #B5B790;
+			border-radius: 3px 3px 3px 3px;
+			-moz-border-radius: 3px 3px 3px 3px;
+			-webkit-border-radius: 3px 3px 3px 3px;
+			/* margin: 0 auto 20px; */
+			margin-top:15px;
+			padding: 20px 30px 20px 20px;
+			width: 100%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.ugadmiss .grouptour_blip h3 {
+			margin-top:-15px !important;
+		}
+		.ugadmiss .grouptour_blip p {
+			padding-top:5px;
+		}
+		.ugadmiss .vuac_map,
+		.ugadmiss .vuac_img {
+			border-style: solid;
+			border-width: 0px;
+			border-color: #660000;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+/* --------------------------------------------------------
+
+/Gateway/
+
+----------------------------------------------------------*/
+
+	.ugadmiss .gateway-reg iframe.reg-window {
+		min-height: 650px;
+	}
+	.ugadmiss .gray-gradient-bg {
+		background: -webkit-linear-gradient(#ffffff, #C2C1BA); /* white to gray */
+		background: -o-linear-gradient(#ffffff, #C2C1BA);
+		background: -moz-linear-gradient(#ffffff, #C2C1BA);
+		background: linear-gradient(#ffffff, #C2C1BA);
+	}
+	.ugadmiss .register_blip,
+	.ugadmiss .gray-gradient-bg {
+		width:100%;
+		padding:20px;
+		margin:0 auto;
+		border:1px solid #CCC;
+		border-bottom:0px;
+		border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.ugadmiss .register_blip h1,
+	.ugadmiss .register_blip h2,
+	.ugadmiss .register_blip h3,
+	.ugadmiss .gray-gradient-bg h1,
+	.ugadmiss .gray-gradient-bg h2,
+	.ugadmiss .gray-gradient-bg h3 {
+		margin:0;
+		padding:0 0 10px 0;
+	}
+
+	.ugadmiss .register_blip p {
+		margin-right:125px;
+	}
+
+	.ugadmiss .register_blip p {
+		padding:10px 0px 0px;
+	}
+	.ugadmiss .register_blip a,
+	.ugadmiss .gray-gradient-bg a {
+		background-color: transparent !important; /* This is overriding another style */
+	}
+
+	.ugadmiss .text_small {
+		/* font-size: 125%; */ /* Custom size of callout text */
+	}
+	.ugadmiss .text_normal {
+		font-size: 150%; /* Custom size of callout text */
+	}
+	.ugadmiss .hidden {
+		visibility: hidden !important;
+		/* display: block !important; */
+	}
+
+	/* FOR THE VIMEO VIDEO... SO IT WILL EXPAND TO THE DIV */
+	.ugadmiss .videoWrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+	}
+	.ugadmiss .videoWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.ugadmiss .vidalign_center {
+		text-align: center;
+	}
+	.ugadmiss .app_status_btn {
+		width:auto;
+		text-align: right;
+	}
+	.ugadmiss .app_status_btn p {
+		background: #861F41; /* Chicago Maroon */
+		color:white;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		display: inline-block;
+		width: auto;
+		padding:5px 10px 5px 10px;
+	}
+	.ugadmiss .app_status_btn p:hover {
+		background: #D14124; /* Burnt Orange Web */
+	}
+	.ugadmiss .app_status_btn a,
+	.ugadmiss .app_status_btn a:hover {
+		color:white;
+		text-decoration: none;
+	}
+	.ugadmiss .app_status_btn p::after {
+		content: "\00a0\f08e"; /* fa-external-link */
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		display: inline-block;
+		/*--adjust as necessary--*/
+		vertical-align: middle;
+	}
+
+	/* Same as app_status_btn. for use with other things */
+	.ugadmiss .maroon_org_btn {
+		width:auto;
+		text-align: right;
+	}
+	.ugadmiss .maroon_org_btn p {
+		background: #861F41; /* Chicago Maroon */
+		color:white;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		display: inline-block;
+		width: auto; /* use 100% to spread */
+		padding:5px 10px 5px 10px;
+	}
+	.ugadmiss .maroon_org_btn p:hover {
+		background: #D14124; /* Burnt Orange Web */
+	}
+
+	.ugadmiss .maroon_org_btn a:link,
+	.ugadmiss .maroon_org_btn a:active,
+	.ugadmiss .maroon_org_btn a:hover,
+	.ugadmiss .maroon_org_btn a:visited {
+		color:white;
+	}
+	.ugadmiss .maroon_org_btn a:hover,
+	.ugadmiss .maroon_org_btn a::after:hover {
+		text-decoration: none !important;
+	}
+
+	.ugadmiss .maroon_org_btn a::after {
+		content: "\00a0\f08e"; /* fa-external-link */
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: none;
+		display: inline-block;
+		/*--adjust as necessary--*/
+		vertical-align: text-top;
+	}
+	
+	.ugadmiss .orange_mrn_btn {
+		width:auto;
+		text-align: right;
+	}
+	.ugadmiss .orange_mrn_btn p {
+		background: #D14124; /* Burnt Orange Web */
+		color:white;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		display: inline-block;
+		width: auto; /* use 100% to spread */
+		padding:5px 10px 5px 10px;
+	}
+	.ugadmiss .orange_mrn_btn p:hover {
+		background: #861F41; /* Chicago Maroon */
+	}
+
+	.ugadmiss .orange_mrn_btn a:link,
+	.ugadmiss .orange_mrn_btn a:active,
+	.ugadmiss .orange_mrn_btn a:hover,
+	.ugadmiss .orange_mrn_btn a:visited {
+		color:white;
+	}
+	.ugadmiss .orange_mrn_btn a:hover,
+	.ugadmiss .orange_mrn_btn a::after:hover {
+		text-decoration: none !important;
+	}
+
+	.ugadmiss .orange_mrn_btn a::after {
+		content: "\00a0\f08e"; /* fa-external-link */
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: none;
+		display: inline-block;
+		/*--adjust as necessary--*/
+		vertical-align: text-top;
+	}
+
+
+	.ugadmiss .maroon_org_btn[class~='right'],
+	.ugadmiss .orange_mrn_btn[class~='right'] {
+		width:auto;
+		text-align: right;
+	}
+	
+	.ugadmiss .reg_btn a {
+		display: block;
+		max-width: 50%;
+		background: #79946c;
+		color: #fff !important;
+		padding: 20px;
+		margin: 0 auto 20px;
+		border: 3px solid #516f43;
+		font-size: 35px;
+		font-weight: 600;
+		text-align: center;
+		box-shadow: 1px 1px 3px #CCC;
+		-webkit-box-shadow: 1px 1px 3px #CCC;
+		-moz-box-shadow: 1px 1px 3px #CCC;
+		border-radius:8px;
+		-moz-border-radius:8px;
+		-webkit-border-radius:8px;
+	}
+	.ugadmiss .reg_btn a:hover {
+		text-decoration: none;
+	}
+	.ugadmiss .reg_btn a::after {
+		content: "\00a0\f08e"; /* fa-external-link */
+		font-family: FontAwesome;
+		font-size:85%;
+	}
+
+
+/* --------------------------------------------------------
+
+CALLOUTS
+
+----------------------------------------------------------*/
+
+	/* DEFAULT */
+
+		.ugadmiss .aside {
+			display: block;
+			padding: 12px 24px 12px 24px; /* be sure to set the padding-left in the 'noindent' class to match */
+			border-radius:5px;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+		}
+		.ugadmiss .callout {
+			padding: 15px 20px;
+			border-style: solid;
+			border-width: 1px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+
+		.ugadmiss .aside,
+		.ugadmiss .callout {
+			clear:both;
+		}
+
+		.ugadmiss .callout a,
+		.ugadmiss .callout a:visited,
+		.ugadmiss .aside a,
+		.ugadmiss .aside a:visited {
+			text-decoration:underline;
+		}
+		.ugadmiss .callout a:hover,
+		.ugadmiss .callout a:active,
+		.ugadmiss .aside a:hover,
+		.ugadmiss .aside a:active {
+			text-decoration: none !important;
+		}
+
+	/* FORMATTING */
+
+		.ugadmiss .callout p {
+			margin-bottom: 0px;
+		}
+		.ugadmiss .aside p {
+			margin: 0;
+		}
+		.ugadmiss .aside[class~='float-right'] {
+			float:right;
+			margin-bottom: inherit;
+		}
+		.ugadmiss .aside[class~='float-left'] {
+			float:left;
+			margin-bottom: inherit;
+		}
+		.ugadmiss .aside[class~='right-icon']::before {
+			float:right;
+		}
+		.ugadmiss .aside[class~='left-icon']::before {
+			float:left;
+		}
+		.ugadmiss .aside[class~='noicon']::before {
+			content: initial;
+		}
+		.ugadmiss .aside[class~='nostretch'] {
+			display: inline-flex;
+		}
+		.ugadmiss .aside[class~='indent'] {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+		.ugadmiss .aside[class~='noindent'] {
+			padding-left: 24px;
+		}
+		.ugadmiss .aside[class~='center'] {
+			padding-right:0px !important;
+			padding-left:0px !important;
+			text-align: center;
+		}
+		.ugadmiss .aside[class~='link'] a::after {
+			content: "\f08e";
+			font-family: FontAwesome;
+			margin-left: 5px;
+			border-bottom: 0px;
+			/* vertical-align: middle; */
+		}
+		.ugadmiss .aside[class~='link'] a::after {
+			text-decoration: none;
+		}
+		.ugadmiss .aside[class~='link'] a,
+		.ugadmiss .aside[class~='link'] a:active,
+		.ugadmiss .aside[class~='link'] a:visited {
+			text-decoration: none;
+		}
+		.ugadmiss .aside[class~='link'] a:hover {
+			text-decoration: underline;
+		}
+		.ugadmiss .aside::before {
+			content: "\f069"; /* DEFAULT: asterisk */
+			font-family: FontAwesome;
+			/* --adjust as necessary-- */
+			float:left;
+			font-size: 200%;
+			margin-right: .3em;
+			line-height: 1.1em;
+			padding: .1em 0 0 0;
+		}
+
+	/* CUSTOM PALETTE COLORS - work in progess */
+
+		.ugadmiss .callout[class~='vibrant'] h1{
+			color: #D14124 !important; /* Burnt Orange */
+		}
+		.ugadmiss .callout[class~='vibrant'] h2,
+		.ugadmiss .callout[class~='vibrant'] i.fa {
+			color: #003C71 !important; /* cadet blue */
+		}
+		.ugadmiss .callout[class~='vibrant'] h3 {
+			color: #75787B !important; /* Hokie Stone */
+		}
+		/* ================= */
+		.ugadmiss .callout[class~='palette-1'] h1 {
+			color: #861F41 !important; /* Chicago Maroon */
+		}
+		.ugadmiss .callout[class~='palette-1'] h2,
+		.ugadmiss .callout[class~='palette-1'] i.fa {
+			color: #FF6600 !important; /* Burnt Orange */
+		}
+		.ugadmiss .callout[class~='palette-1'] h3 {
+			color: #75787B !important; /* Hokie Stone */
+		}
+		/* ================= */
+		.ugadmiss .callout[class~='palette-2'] h1 {
+			color: #75787B !important; /* Hokie Stone */
+		}
+		.ugadmiss .callout[class~='palette-2'] h2,
+		.ugadmiss .callout[class~='palette-2'] i.fa {
+			color: #75787B !important; /* Hokie Stone */
+		}
+		.ugadmiss .callout[class~='palette-2'] h3 {
+			color: #75787B !important; /* Hokie Stone */
+		}
+
+	/* ICONS */
+
+		.ugadmiss .aside[class~='star']::before {
+			content: "\f12a"; /* star */
+		}
+		.ugadmiss .aside[class~='exclamation']::before {
+			content: "\f06a"; /* fa-exclamation-circle */
+		}
+		.ugadmiss .aside[class~='caution']::before {
+			content: "\f071"; /* exclamation-triangle */
+		}
+		.ugadmiss .aside[class~='warning']::before {
+			content: "\f071"; /* fa-warning */
+		}
+		.ugadmiss .aside[class~='mobile']::before {
+			content: "\f10b"; /* mobile */
+		}
+		.ugadmiss .aside[class~='desktop']::before {
+			content: "\f108"; /* desktop */
+		}
+		.ugadmiss .aside[class~='extlink']::before {
+			content: "\f08e"; /* external-link */
+		}
+		.ugadmiss .aside[class~='asterisk']::before {
+			content: "\f069"; /* fa-asterisk */
+		}
+		.ugadmiss .aside[class~='map']::before {
+			content: "\f041"; /* fa-map-marker */
+		}
+		.ugadmiss .aside[class~='twitter']::before {
+			content: "\f081" !important; /* fa-twitter-square */
+		}
+		.ugadmiss .aside[class~='instagram']::before {
+			content: "\f16d" !important; /* fa-instagram */
+		}
+		.ugadmiss .aside[class~='facebook']::before {
+			content: "\f082" !important; /* fa-facebook-square */
+		}
+		.ugadmiss .aside[class~='vimeo']::before {
+			content: "\f194"; /* fa-vimeo-square */
+		}
+
+	/* 2017 BRANDING */
+
+		/* BG and BORDERS */
+	
+			.ugadmiss .callout,
+			.ugadmiss .aside {
+				background: #75787B;
+				border-color: #75787B;
+			}
+
+			.ugadmiss .callout[class~='hokiestone'],
+			.ugadmiss .aside[class~='hokiestone'] {
+				background: #75787B !important;
+				border-color: #75787B !important;
+			}
+
+			.ugadmiss .callout[class~='yardline'],
+			.ugadmiss .aside[class~='yardline'] {
+				background: #ffffff !important;
+				border-color: #E5E1E6 !important;
+			}
+
+			.ugadmiss .callout[class~='chicago'],
+			.ugadmiss .aside[class~='chicago'] {
+				background: #861F41 !important;
+				border-color: #861F41 !important;
+			}
+
+			.ugadmiss .callout[class~='pylon-purple'],
+			.ugadmiss .aside[class~='pylon-purple'] {
+				background: #642667 !important;
+				border-color: #642667 !important;
+			}
+			.ugadmiss .callout[class~='boundless-pink'],
+			.ugadmiss .aside[class~='boundless-pink'] {
+				background: #CE0058 !important;
+				border-color: #CE0058 !important;
+			}
+			.ugadmiss .callout[class~='virginia-sunset'],
+			.ugadmiss .aside[class~='virginia-sunset'] {
+				background: #ED8B00 !important;
+				border-color: #ED8B00;
+			}
+			.ugadmiss .callout[class~='triumphant-yellow'],
+			.ugadmiss .aside[class~='triumphant-yellow'] {
+				background: #F7EA48 !important;
+				border-color: #F7EA48 !important;
+			}
+			.ugadmiss .callout[class~='burnt-orange'],
+			.ugadmiss .aside[class~='burnt-orange'] {
+				background: #E87722 !important;
+				border-color: #E87722 !important;
+			}
+			.ugadmiss .callout[class~='burnt-orange-web'],
+			.ugadmiss .aside[class~='burnt-orange-web'] {
+				background: #C64600 !important;
+				border-color: #C64600 !important;
+			}
+			.ugadmiss .callout[class~='sustainable-teal'],
+			.ugadmiss .aside[class~='sustainable-teal'] {
+				background: #508590 !important;
+				border-color: #508590 !important;
+			}
+			.ugadmiss .callout[class~='vibrant-turquoise'],
+			.ugadmiss .aside[class~='vibrant-turquoise'] {
+				background: #2CD5C4 !important;
+				border-color: #2CD5C4 !important;
+			}
+			.ugadmiss .callout[class~='land-grant-grey'],
+			.ugadmiss .aside[class~='land-grant-grey'] {
+				background: #d7d2cb !important;
+				border-color: #d7d2cb !important;
+			}
+			.ugadmiss .callout[class~='skipper-smoke'],
+			.ugadmiss .aside[class~='skipper-smoke'] {
+				background: #E5E1E6 !important;
+				border-color: #E5E1E6 !important;
+			}
+			.ugadmiss .callout[class~='cadet-blue'],
+			.ugadmiss .aside[class~='cadet-blue'] {
+				background: #003C71 !important;
+				border-color: #003C71 !important;
+			}
+			.ugadmiss .aside,
+			.ugadmiss .aside[class~='chicago'],
+			.ugadmiss .aside[class~='yardline'],
+			.ugadmiss .aside[class~='hokiestone'],
+			.ugadmiss .aside[class~='land-grant-grey'],
+			.ugadmiss .aside[class~='skipper-smoke'],
+			.ugadmiss .aside[class~='pylon-purple'],
+			.ugadmiss .aside[class~='boundless-pink'],
+			.ugadmiss .aside[class~='triumphant-yellow'],
+			.ugadmiss .aside[class~='virginia-sunset'],
+			.ugadmiss .aside[class~='burnt-orange-web'],
+			.ugadmiss .aside[class~='sustainable-teal'],
+			.ugadmiss .aside[class~='vibrant-turquoise'],
+			.ugadmiss .aside[class~='cadet-blue'] {
+				border-left-width: 10px !important;
+				border-style: solid !important;
+			}
+			.ugadmiss .callout,
+			.ugadmiss .callout[class~='chicago'],
+			.ugadmiss .callout[class~='yardline'],
+			.ugadmiss .callout[class~='hokiestone'],
+			.ugadmiss .callout[class~='land-grant-grey'],
+			.ugadmiss .callout[class~='skipper-smoke'],
+			.ugadmiss .callout[class~='pylon-purple'],
+			.ugadmiss .callout[class~='boundless-pink'],
+			.ugadmiss .callout[class~='triumphant-yellow'],
+			.ugadmiss .callout[class~='virginia-sunset'],
+			.ugadmiss .callout[class~='burnt-orange-web'],
+			.ugadmiss .callout[class~='sustainable-teal'],
+			.ugadmiss .callout[class~='vibrant-turquoise'],
+			.ugadmiss .callout[class~='cadet-blue'] {
+				border-width: 1px !important;
+				border-style: solid !important;
+			}
+	
+		/* TEXT */
+
+			.ugadmiss .callout,
+			.ugadmiss .aside,
+			.ugadmiss .callout i.fa,
+			.ugadmiss .callout[class~='chicago'],
+			.ugadmiss .aside[class~='chicago'],
+			.ugadmiss .callout[class~='hokiestone'],
+			.ugadmiss .aside[class~='hokiestone'],
+			.ugadmiss .callout[class~='pylon-purple'],
+			.ugadmiss .aside[class~='pylon-purple'],
+			.ugadmiss .callout[class~='boundless-pink'],
+			.ugadmiss .aside[class~='boundless-pink'],
+			.ugadmiss .callout[class~='burnt-orange-web'],
+			.ugadmiss .aside[class~='burnt-orange-web'],
+			.ugadmiss .callout[class~='sustainable-teal'],
+			.ugadmiss .aside[class~='sustainable-teal'],
+			.ugadmiss .callout[class~='cadet-blue'],
+			.ugadmiss .aside[class~='cadet-blue'] {
+				color: #fff;
+			}
+			.ugadmiss .callout[class~='triumphant-yellow'],
+			.ugadmiss .aside[class~='triumphant-yellow'],
+			.ugadmiss .callout[class~='land-grant-grey'],
+			.ugadmiss .aside[class~='land-grant-grey'],
+			.ugadmiss .callout[class~='virginia-sunset'],
+			.ugadmiss .aside[class~='virginia-sunset'],
+			.ugadmiss .callout[class~='vibrant-turquoise'],
+			.ugadmiss .aside[class~='vibrant-turquoise'],
+			.ugadmiss .callout[class~='skipper-smoke'],
+			.ugadmiss .aside[class~='skipper-smoke'] {
+				color: #000;
+			}
+			.ugadmiss .callout[class~='yardline'],
+			.ugadmiss .aside[class~='yardline'] {
+				color: #75787B; /* HOKIES STONE */
+			}
+
+		/* PALETTE COLORS - work in progess */
+
+			.ugadmiss .callout[class~='vibrant'] h1{
+				color: #E87722 !important; /* Burnt Orange */
+			}
+			.ugadmiss .callout[class~='vibrant'] h2,
+			.ugadmiss .callout[class~='vibrant'] i.fa {
+				color: #003C71 !important; /* cadet blue */
+			}
+			.ugadmiss .callout[class~='vibrant'] h3 {
+				color: #75787B !important; /* Hokie Stone */
+			}
+			/* ================= */
+			.ugadmiss .callout[class~='palette-1'] h1 {
+				color: #861F41 !important; /* Chicago Maroon */
+			}
+			.ugadmiss .callout[class~='palette-1'] h2,
+			.ugadmiss .callout[class~='palette-1'] i.fa {
+				color: #E87722 !important; /* Burnt Orange */
+			}
+			.ugadmiss .callout[class~='palette-1'] h3 {
+				color: #75787B !important; /* Hokie Stone */
+			}
+			/* ================= */
+			.ugadmiss .callout[class~='palette-2'] h1 {
+				color: #75787B !important; /* Hokie Stone */
+			}
+			.ugadmiss .callout[class~='palette-2'] h2,
+			.ugadmiss .callout[class~='palette-2'] i.fa {
+				color: #75787B !important; /* Hokie Stone */
+			}
+			.ugadmiss .callout[class~='palette-2'] h3 {
+				color: #75787B !important; /* Hokie Stone */
+			}
+
+		/* LINKS */
+
+			.ugadmiss .callout a,
+			.ugadmiss .callout a:visited,
+			.ugadmiss .callout a:hover,
+			.ugadmiss .callout a:active,
+			.ugadmiss .aside a,
+			.ugadmiss .aside a:visited,
+			.ugadmiss .aside a:hover,
+			.ugadmiss .aside a:active {
+				color: #F7EA48; /* triumphant yellow links */
+			}
+
+			.ugadmiss .callout[class~='yardline'] a,
+			.ugadmiss .callout[class~='yardline'] a:visited,
+			.ugadmiss .callout[class~='yardline'] a:hover,
+			.ugadmiss .callout[class~='yardline'] a:active,
+			.ugadmiss .aside[class~='yardline'] a,
+			.ugadmiss .aside[class~='yardline'] a:visited,
+			.ugadmiss .aside[class~='yardline'] a:hover,
+			.ugadmiss .aside[class~='yardline'] a:active {
+				color: #C64600 !important; /* Burnt Orange Web links */
+			}
+			.ugadmiss .callout[class~='chicago'] a,
+			.ugadmiss .callout[class~='chicago'] a:visited,
+			.ugadmiss .callout[class~='chicago'] a:hover,
+			.ugadmiss .callout[class~='chicago'] a:active,
+			.ugadmiss .aside[class~='chicago'] a,
+			.ugadmiss .aside[class~='chicago'] a:visited,
+			.ugadmiss .aside[class~='chicago'] a:hover,
+			.ugadmiss .aside[class~='chicago'] a:active,
+			.ugadmiss .callout[class~='hokiestone'] a,
+			.ugadmiss .callout[class~='hokiestone'] a:visited,
+			.ugadmiss .callout[class~='hokiestone'] a:hover,
+			.ugadmiss .callout[class~='hokiestone'] a:active,
+			.ugadmiss .aside[class~='hokiestone'] a,
+			.ugadmiss .aside[class~='hokiestone'] a:visited,
+			.ugadmiss .aside[class~='hokiestone'] a:hover,
+			.ugadmiss .aside[class~='hokiestone'] a:active,
+			.ugadmiss .callout[class~='pylon-purple'] a,
+			.ugadmiss .callout[class~='pylon-purple'] a:visited,
+			.ugadmiss .callout[class~='pylon-purple'] a:hover,
+			.ugadmiss .callout[class~='pylon-purple'] a:active,
+			.ugadmiss .aside[class~='pylon-purple'] a,
+			.ugadmiss .aside[class~='pylon-purple'] a:visited,
+			.ugadmiss .aside[class~='pylon-purple'] a:hover,
+			.ugadmiss .aside[class~='pylon-purple'] a:active {
+				color: #F7EA48 !important; /* triumphant yellow links */
+			}
+			.ugadmiss .callout[class~='virginia-sunset'] a:visited,
+			.ugadmiss .callout[class~='virginia-sunset'] a:hover,
+			.ugadmiss .callout[class~='virginia-sunset'] a:active,
+			.ugadmiss .aside[class~='virginia-sunset'] a,
+			.ugadmiss .aside[class~='virginia-sunset'] a:visited,
+			.ugadmiss .aside[class~='virginia-sunset'] a:hover,
+			.ugadmiss .aside[class~='virginia-sunset'] a:active {
+				color: #000000 !important; /* black */
+			}
+			.ugadmiss .callout[class~='cadet-blue'] a,
+			.ugadmiss .callout[class~='cadet-blue'] a:visited,
+			.ugadmiss .callout[class~='cadet-blue'] a:hover,
+			.ugadmiss .callout[class~='cadet-blue'] a:active,
+			.ugadmiss .aside[class~='cadet-blue'] a,
+			.ugadmiss .aside[class~='cadet-blue'] a:visited,
+			.ugadmiss .aside[class~='cadet-blue'] a:hover,
+			.ugadmiss .aside[class~='cadet-blue'] a:active {
+				color: #2CD5C4 !important; /* vibrant-turquoise links */
+			}
+			.ugadmiss .callout[class~='land-grant-grey'] a,
+			.ugadmiss .callout[class~='land-grant-grey'] a:visited,
+			.ugadmiss .callout[class~='land-grant-grey'] a:hover,
+			.ugadmiss .callout[class~='land-grant-grey'] a:active,
+			.ugadmiss .callout[class~='virginia-sunset'] a,
+			.ugadmiss .aside[class~='land-grant-grey'] a,
+			.ugadmiss .aside[class~='land-grant-grey'] a:visited,
+			.ugadmiss .aside[class~='land-grant-grey'] a:hover,
+			.ugadmiss .aside[class~='land-grant-grey'] a:active,
+			.ugadmiss .callout[class~='vibrant-turquoise'] a,
+			.ugadmiss .callout[class~='vibrant-turquoise'] a:visited,
+			.ugadmiss .callout[class~='vibrant-turquoise'] a:hover,
+			.ugadmiss .callout[class~='vibrant-turquoise'] a:active,
+			.ugadmiss .aside[class~='vibrant-turquoise'] a,
+			.ugadmiss .aside[class~='vibrant-turquoise'] a:visited,
+			.ugadmiss .aside[class~='vibrant-turquoise'] a:hover,
+			.ugadmiss .aside[class~='vibrant-turquoise'] a:active,
+			.ugadmiss .callout[class~='skipper-smoke'] a,
+			.ugadmiss .callout[class~='skipper-smoke'] a:visited,
+			.ugadmiss .callout[class~='skipper-smoke'] a:hover,
+			.ugadmiss .callout[class~='skipper-smoke'] a:active,
+			.ugadmiss .aside[class~='skipper-smoke'] a,
+			.ugadmiss .aside[class~='skipper-smoke'] a:visited,
+			.ugadmiss .aside[class~='skipper-smoke'] a:hover,
+			.ugadmiss .aside[class~='skipper-smoke'] a:active,
+			.ugadmiss .aside[class~='triumphant-yellow'] a,
+			.ugadmiss .aside[class~='triumphant-yellow'] a:visited,
+			.ugadmiss .aside[class~='triumphant-yellow'] a:hover,
+			.ugadmiss .aside[class~='triumphant-yellow'] a:active,
+			.ugadmiss .callout[class~='triumphant-yellow'] a,
+			.ugadmiss .callout[class~='triumphant-yellow'] a:visited,
+			.ugadmiss .callout[class~='triumphant-yellow'] a:hover,
+			.ugadmiss .callout[class~='triumphant-yellow'] a:active {
+				color: #003C71 !important; /* cadet-blue links */
+			}
+			.ugadmiss .callout[class~='sustainable-teal'] a,
+			.ugadmiss .callout[class~='sustainable-teal'] a:visited,
+			.ugadmiss .callout[class~='sustainable-teal'] a:hover,
+			.ugadmiss .callout[class~='sustainable-teal'] a:active,
+			.ugadmiss .aside[class~='sustainable-teal'] a,
+			.ugadmiss .aside[class~='sustainable-teal'] a:visited,
+			.ugadmiss .aside[class~='sustainable-teal'] a:hover,
+			.ugadmiss .aside[class~='sustainable-teal'] a:active,
+			.ugadmiss .aside[class~='boundless-pink'] a,
+			.ugadmiss .aside[class~='boundless-pink'] a:visited,
+			.ugadmiss .aside[class~='boundless-pink'] a:hover,
+			.ugadmiss .aside[class~='boundless-pink'] a:active,
+			.ugadmiss .callout[class~='boundless-pink'] a,
+			.ugadmiss .callout[class~='boundless-pink'] a:visited,
+			.ugadmiss .callout[class~='boundless-pink'] a:hover,
+			.ugadmiss .callout[class~='boundless-pink'] a:active,
+			.ugadmiss .callout[class~='burnt-orange-web'] a,
+			.ugadmiss .callout[class~='burnt-orange-web'] a:visited,
+			.ugadmiss .callout[class~='burnt-orange-web'] a:hover,
+			.ugadmiss .callout[class~='burnt-orange-web'] a:active,
+			.ugadmiss .aside[class~='burnt-orange-web'] a,
+			.ugadmiss .aside[class~='burnt-orange-web'] a:visited,
+			.ugadmiss .aside[class~='burnt-orange-web'] a:hover,
+			.ugadmiss .aside[class~='burnt-orange-web'] a:active {
+				color: #E5E1E6 !important; /* Skipper Smoke links */
+			}
+
+/* --------------------------------------------------------
+
+IMAGES
+
+----------------------------------------------------------*/
+
+	.ugadmiss .popout img {
+		border-style: solid;
+		border-width: 0px;
+		border-color: #660000;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.ugadmiss .vignette {
+		position: relative;
+		display: inline-flex;
+		/* background-image: url('../images/posts/css-effects/3/atx-rooftop.jpg'); */
+		background-size: cover;
+	}
+
+	.ugadmiss .vignette img {
+		width: 100%;
+	}
+
+	.ugadmiss .vignette::after {
+		content: '';
+		z-index: 1;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		background: radial-gradient(circle, transparent 78%,#222 154%); /* Standard syntax */
+		background: -webkit-radial-gradient(circle, transparent 78%,#222 154%); /* Safari 5.1- 6.0 */
+		background: -o-radial-gradient(circle, transparent 78%,#222 154%); /* Opera 11.6-12.0 */
+		background: -moz-radial-gradient(circle, transparent 78%,#222 154%); /* Firefox 3.6-15 */
+	}
+
+	.ugadmiss .row-container .bg-container .featured-image {
+		margin-right: 30px; /* For homepage */
+	}
+
+	.ugadmiss .featured-image-right-margin {
+		margin-right: 30px; /* For other pages */
+	}
+
+/* --------------------------------------------------------
+
+LISTS (font awesome)
+
+This removes the carot before list items and allows custom html in its place. The carot would display overlapped.
+----------------------------------------------------------*/
+
+	.ugadmiss .vt-rawhtml.fa-icon-list ul li::before {
+		display: none;
+	}
+
+/* REMOVE FOR NON USE */
+
+	.ugadmiss .custom-button button {
+		width:auto;
+		text-align: right;
+		background: #D14124; /* Burnt Orange Web */
+		color:white;
+		border: 0px;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		display: inline-block;
+		padding:5px 10px 5px 10px;
+	}
+	.ugadmiss .custom-button button:hover {
+		background: #861F41; /* Chicago Maroon */
+	}
+
+	.ugadmiss .custom-button a button:hover,
+	.ugadmiss .custom-button a button::after:hover {
+		text-decoration: none !important;
+	}
+
+	.ugadmiss .custom-button[class~='ext'] a button::after {
+		content: "\00a0\f08e"; /* fa-external-link */
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: none;
+		display: inline-block;
+		/*--adjust as necessary--*/
+		vertical-align: text-top;
+	}
+	.ugadmiss .custom-button[class~='right'] {
+		text-align: right;
+	}
+	.ugadmiss .custom-button[class~='orange'] button {
+		background: #D14124; /* Burnt Orange Web */
+	}
+	.ugadmiss .custom-button[class~='orange'] button:hover {
+		background: #861F41; /* Burnt Orange Web */
+	}
+	.ugadmiss .custom-button[class~='maroon'] button {
+		background: #861F41; /* Burnt Orange Web */
+	}
+	.ugadmiss .custom-button[class~='maroon'] button:hover {
+		background: #D14124; /* Burnt Orange Web */
+	}
+
+	/* Same as faq_box_home. for use with other things */
+	.ugadmiss .more_box {
+		background: #fff;
+		padding: 15px;
+		border: 5px #660000 solid;
+		border-radius: 10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		box-shadow: 1px 1px 5px #888888;
+		-webkit-box-shadow: 1px 1px 5px #888888;
+		-moz-box-shadow: 1px 1px 5px #888888;
+		overflow: hidden;
+	}
+	.ugadmiss .more_box h1,
+	.ugadmiss .more_box h2,
+	.ugadmiss .more_box h3 {
+		margin-top:10px;
+	}
+	@media only screen and (max-width: 767px) {
+		/* ========================== */
+		.ugadmiss .more_box {
+			font-size: 20px !important;
+		}
+	}

@@ -1,0 +1,80 @@
+/* --------------------------------------------------------
+
+Keywords
+
+----------------------------------------------------------*/
+
+	.ugmajors.majors-home .visible-side-nav {
+		display:none;
+	}
+
+	.ugmajors .vt-tagcloud .vt-tag-li-keywords {
+		display:list-item;
+	}
+	.ugmajors .vt-tagcloud .vt-tag-d-0-keywords {
+		display: block;
+	}
+	.ugmajors .vt-tagcloud .vt-tag-li-keywords ul li {
+		list-style-type: none;
+		margin-right: unset;
+		margin-bottom: unset;
+		margin-top: 8px;
+		float: left;
+	}
+	.ugmajors .vt-tagcloud .vt-tag-li-keywords ul li a {
+		/* font-family: Acherus,sans-serif; */
+		font-size: 14px;
+		/* font-weight: 400; */
+		padding: unset;
+		color: unset;
+		background-color: unset;
+	}
+	.ugmajors .vt-tagcloud .vt-tag-li-keywords ul li a:hover {
+		color:#00417a; /* Cadet Blue */
+	}
+
+	.ugmajors .vt-tagcloud .vt-tag-li-keywords ul li a:before {
+		content: unset;
+		font-family: unset;
+		padding-right: unset;
+	}
+	.ugmajors .vt-tagcloud .vt-tag-li-keywords ul li:after {
+		content:", ";
+		white-space: pre;
+	}
+	.ugmajors .vt-tagcloud .vt-tag-li-keywords ul li:last-of-type:after {
+		content:unset;
+		white-space: unset;
+	}
+
+	.list-table-no-title-row thead {
+		display: none;
+	}
+
+/* --------------------------------------------------------
+
+Legend
+
+----------------------------------------------------------*/
+
+	.ugmajors .legend,
+	.ugmajors .legend p {
+		font-size: .95em !important;
+		background-color: #eee;
+		padding: 0 10px;
+		border-radius:5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-o-border-radius: 5px;
+	}
+	.ugmajors .legend.right,
+	.ugmajors .legend.right p {
+		text-align: right;
+	}
+	.ugmajors .legend.center,
+	.ugmajors .legend.center p {
+		text-align: center;
+	}
+	.ugmajors p.legend {
+		margin-bottom:0px !important;
+	}

@@ -1,0 +1,699 @@
+@import "ugadmiss-ad-landing.css";
+
+/* Most of these 'ugadmiss' page styles affect the ad-landing pages also*/
+
+/* --------------------------------------------------------
+
+Java date box for all pages, including ad pages
+ 
+----------------------------------------------------------*/
+	.ugadmiss[class~='ie'] .black-box-visit-schedule .visit-tab {
+		margin-right: -4px !important;
+	}
+	.ugadmiss.admiss-home .row-container {
+		margin-top: -80px;
+	}
+	.ugadmiss.admiss-home .video-container .mediaexternal {
+		margin-bottom: 0px !important;
+	}
+	.ugadmiss.admiss-home .video-container .video-caption p {
+		font-size:12px;
+		color:#fff;
+		background-color: #3f787d;
+		padding:5px;
+	}
+
+/* --------------------------------------------------------
+
+Sub-nav - as of 2017-12-04 12:58:39 it only exists on the homepage
+
+----------------------------------------------------------*/
+
+	.ugadmiss.admiss-home .navbar {
+		margin-bottom: 0px;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links {
+		color:#d7d2cb;
+		position:fixed;
+		top:0px;
+		left:0px;
+		padding: 0px 22px;
+		width: 100%;
+		text-align: center;
+		z-index: 100;
+		vertical-align: middle;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links p {
+		font-size: 12px;
+		margin: 0px;
+		padding: 0px;
+		line-height: 2.8;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .parbase {
+		margin-bottom: 0px;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .social-media {
+		font-size: 1em;
+		display: block;
+		line-height: 4.0;
+		float: right;
+		clear: both;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .social-media a {
+		color: #fff;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .social-media a:hover {
+		color: #ED8B00;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links a {
+		color:#fff;
+		text-decoration: none !important;
+		font-size: inherit;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links a:hover {
+		/* color: #ED8B00; */
+		text-decoration: underline !important;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .social-media a:hover .fa-inverse {
+		color: #fff;
+	}
+	
+	/* --------------------------------------------------------
+
+	INTERNET EXPLORER
+
+	----------------------------------------------------------*/
+		.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links {
+			color:#000 !important;
+			position:absolute !important;
+			top:113px !important;
+			width:unset !important;
+			background-color: transparent !important;
+			border-bottom: none !important;
+		}
+		.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links .nav-sub-links button {
+			background-color: transparent !important;
+		}
+		.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links .nav-sub-links button:hover {
+			border-bottom: 5px #642667 solid !important;
+		}
+		.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links a {
+			color:#000 !important;
+		}
+		.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links .social-media {
+			display: inline !important;
+			float:none !important;
+		}
+		.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links .social-media a {
+			color: #660000 !important;
+		}
+		.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links .social-media a:hover {
+			color: #ED8B00 !important;
+		}
+		.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links .social-media .fa-inverse {
+			color: #fff !important;
+		}
+
+@media only screen and (max-width: 767px) {
+	.ugadmiss .row-container .bg-container {
+		padding: 20px !important;
+	}
+	.ugadmiss .row-container .bg-container .copy-container-on-right,
+	.ugadmiss .row-container .bg-container .copy-container-on-left {
+		width: 100%;
+	}
+	.ugadmiss .row-container .bg-container .header-title h1,
+	.ugadmiss .row-container .bg-container .header-title h2,
+	.ugadmiss .row-container .bg-container .header-title h3,
+	.ugadmiss .row-container .bg-container .major-header,
+	.ugadmiss .row-container .bg-container .firstgen-header {
+		text-align: center;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.ugadmiss.admiss-home .admiss-sub-links .social-media {
+		font-size: 1em;
+	}
+}
+@media only screen and (min-width: 768px) {
+	/* Do not change. It only affects this page */
+	.ugadmiss.ugadmiss.admiss-home .row-container > div {
+		max-width:100%;
+	}
+
+	.ugadmiss .row-container .bg-container .header-title[class~='border-left'],
+	.ugadmiss .row-container .black-box-visit-schedule .tabs-title {
+		border-left: 1px dashed rgba(255,102,0,1);
+		padding-left: 6px;
+	}
+	.ugadmiss .black-box-visit-schedule .planavisit {
+		width: 50%;
+	}
+	.ugadmiss .black-box-visit-schedule .visit-folder .col-sm-6:not(:last-child) {
+		border-right: #bbbcbc 1px solid;
+	}
+	.ugadmiss .black-box-visit-schedule .visit-folder .fall-active,
+	.ugadmiss .black-box-visit-schedule .visit-folder .spring-active {
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+	}
+	.ugadmiss .black-box-visit-schedule .visit-tab,
+	.ugadmiss .black-box-visit-schedule .visit-tab.active {
+		width:50%;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.ugadmiss.admiss-home .admiss-sub-links .nav-sub-links {
+		display: none;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .social-media a {
+		color: #861F41 !important;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .social-media .fa-inverse {
+		color: #fff;
+	}
+	/* .ugadmiss .row-container .bg-container {
+		padding:0 0 0 0 !important;
+	} */
+	.ugadmiss .row-container .bg-container .copy-container-on-right,
+	.ugadmiss .row-container .bg-container .copy-container-on-left {
+		width: 100%;
+	}
+	.ugadmiss .row-container .bg-container .major-header h1 a,
+	.ugadmiss .row-container .bg-container .major-header h2 a,
+	.ugadmiss .row-container .bg-container .major-header h3 a, 
+	.ugadmiss .row-container .bg-container .firstgen-header h1 a,
+	.ugadmiss .row-container .bg-container .firstgen-header h2 a,
+	.ugadmiss .row-container .bg-container .firstgen-header h3 a {
+		color: rgba(198, 70, 0, 1.0);
+	}
+	.ugadmiss .row-container .bg-container .major-header h1 a:hover,
+	.ugadmiss .row-container .bg-container .major-header h2 a:hover,
+	.ugadmiss .row-container .bg-container .major-header h3 a:hover,
+	.ugadmiss .row-container .bg-container .firstgen-header h1 a:hover,
+	.ugadmiss .row-container .bg-container .firstgen-header h2 a:hover,
+	.ugadmiss .row-container .bg-container .firstgen-header h3 a:hover {
+		text-decoration: none;
+		border-bottom: 1px rgba(255, 102, 0,1) dashed;
+	}
+	.ugadmiss .row-container .bg-container {
+		padding: 20px !important;
+	}
+}
+@media only screen and (min-width: 992px) {
+	/* Do not change. It only affects the homepage element */
+	.ugadmiss.admiss-home .visible-side-nav {
+		display:none;
+	}
+
+	.ugadmiss.admiss-home .admiss-sub-links {
+		background-color: #75787B;
+		border-bottom: 1px solid rgba(0,0,0,1);
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .nav-sub-links button {
+		border:0px;
+		background-color: inherit;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .nav-sub-links button:hover {
+		background-color: #642667;
+	}
+	.ugadmiss.ugadmiss.admiss-home .admiss-sub-links .social-media .fa-inverse {
+		color: #861F41;
+	}
+	.ugadmiss .row-container .bg-container .copy-container-on-right {
+		margin-left: 314px;
+	}
+	.ugadmiss .row-container .bg-container .copy-container-on-left {
+		margin-right: 314px;
+	}
+	.ugadmiss .row-container .bg-container .major-header,
+	.ugadmiss .row-container .bg-container .firstgen-header {
+		max-width: 400px;
+		background-color: rgba(0, 0, 0,0.6);
+		text-align: left;
+	}
+	.ugadmiss .row-container .bg-container .major-header {
+		margin-left:20px;
+	}
+	.ugadmiss .row-container .bg-container .firstgen-header {
+		float:right;
+		margin-right:30px;
+	}
+
+	.ugadmiss .row-container .bg-container .major-header {
+	}
+
+	.ugadmiss .row-container .bg-container .major-header h1:first-child,
+	.ugadmiss .row-container .bg-container .firstgen-header h1:first-child {
+		border-bottom: 1px dashed rgba(255,102,0,1);
+		padding-bottom: 8px;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1105px) {
+	.ugadmiss.admiss-home .admiss-sub-links {
+		margin-bottom:10px;
+	}
+	.ugadmiss.admiss-home .admiss-sub-links .social-media {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1031px) and (max-width: 1099px) {
+	.ugadmiss.admiss-home .admiss-sub-links {
+		text-align: left;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.ugadmiss.admiss-home[class~='ie'] .admiss-sub-links .social-media {
+		display: none !important;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.ugadmiss .row-container .bg-container .copy-container-on-right {
+		margin-left: 350px;
+	}
+	.ugadmiss .row-container .bg-container .copy-container-on-left {
+		margin-right: 350px;
+	}
+}
+
+/* --------------------------------------------------------
+
+BUTTONS
+
+----------------------------------------------------------*/
+
+	.ugadmiss .row-container .row-button-container .row:first-of-type > div {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	/* .ugadmiss .row-container .row-button-container .top-buttons .row > div,
+	.ugadmiss .row-container .row-button-container .middle-buttons .row > div {
+		padding-right: 0px;
+		padding-left: 0px;
+	} */
+
+	/* .ugadmiss .row-container .row-button-container .row:first-of-type > div:first-of-type div:first-of-type,
+	.ugadmiss .row-container .row-button-container .row:first-of-type > div:first-of-type div:nth-of-type(2),
+	.ugadmiss .row-container .row-button-container .row:first-of-type > div:first-of-type div:last-of-type {
+		padding-left: 1px;
+	} */
+	.ugadmiss .row-container .row-button-container .top-buttons div:first-of-type div:first-of-type,
+	.ugadmiss .row-container .row-button-container .top-buttons div:first-of-type div:nth-of-type(2),
+	.ugadmiss .row-container .row-button-container .top-buttons div:first-of-type div:last-of-type,
+	.ugadmiss .row-container .row-button-container .middle-buttons div:first-of-type div:first-of-type,
+	.ugadmiss .row-container .row-button-container .middle-buttons div:first-of-type div:nth-of-type(2),
+	.ugadmiss .row-container .row-button-container .middle-buttons div:first-of-type div:last-of-type {
+		padding-left: 1px;
+	}
+
+	/* .ugadmiss .row-container .row-button-container .btn-1,
+	.ugadmiss .row-container .row-button-container .btn-2,
+	.ugadmiss .row-container .row-button-container .btn-3 {
+		padding: 0px !important;
+	} */
+	.ugadmiss .row-container .row-button-container {
+		color:#fff;
+		text-align: center;
+	}
+	.ugadmiss .row-container .row-button-container button {
+		padding:20px;
+		font-weight: 300;
+		border: 0px;
+		font-family: gineso-condensed,sans-serif;
+		width: 100%;
+		text-transform: uppercase;
+	}
+
+	.ugadmiss .row-container .row-button-container .top-buttons button {
+		font-size: 35px;
+	}
+	.ugadmiss .row-container .row-button-container .middle-buttons button {
+		font-size: 25px;
+	}
+	/* .ugadmiss .row-container .row-button-container .top-buttons .btn-1 button {
+		background: rgba(198, 70, 0, 1.0) !important;
+	}
+	.ugadmiss .row-container .row-button-container .top-buttons .btn-2 button {
+		background: rgba(109, 106, 117, 1.0) !important;
+	}
+	.ugadmiss .row-container .row-button-container .top-buttons .btn-3 button {
+		background: rgba(139, 31, 65, 1.0) !important;
+	} */
+
+	/* 2018-06-01 17:07:47 */
+	/* .ugadmiss.admiss-home .admiss-button.button-color-b-orange button {
+		background: rgba(198, 70, 0, 1.0) !important;
+	}
+	.ugadmiss.admiss-home .admiss-button.button-color-hs button {
+		background: rgba(109, 106, 117, 1.0) !important;
+	}
+	.ugadmiss.admiss-home .admiss-button.button-color-c-maroon button {
+		background: rgba(139, 31, 65, 1.0) !important;
+	}
+	
+	.ugadmiss.admiss-home .admiss-button.button-hover-color-c-blue button:hover {
+		background-color:#003C71 !important;
+	}
+	.ugadmiss.admiss-home .admiss-button.button-hover-color-c-maroon button:hover {
+		background: rgba(139, 31, 65, 1.0) !important;
+	} */
+
+
+	/* .ugadmiss .row-container .row-button-container .middle-buttons .btn-1 button,
+	.ugadmiss .row-container .row-button-container .middle-buttons .btn-2 button,
+	.ugadmiss .row-container .row-button-container .middle-buttons .btn-3 button {
+		background: rgba(109, 106, 117, 1.0) !important;
+	} */
+	/* .ugadmiss .row-container .row-button-container .top-buttons button:hover,
+	.ugadmiss .row-container .row-button-container .middle-buttons button:hover {
+		background-color:#003C71 !important;
+	} */
+
+	/* .ugadmiss .row-container .row-button-container a,
+	.ugadmiss .row-container .row-button-container a:hover,
+	.ugadmiss .row-container .row-button-container a:active,
+	.ugadmiss .row-container .row-button-container a:visited {
+		color: rgba(255, 255, 255, 1.0);
+	}
+	.ugadmiss .row-container .row-button-container a:hover {
+		text-decoration: underline;
+	} */
+
+/* --------------------------------------------------------
+
+FOOTER BUTTONS
+
+----------------------------------------------------------*/
+
+	/* (old homepage) */
+		.ugadmiss .last-buttons .title button {
+			background-color: #C64600;
+			padding:15px;
+			text-align: center;
+			margin-bottom:20px;
+			font-family: gineso-condensed,sans-serif;
+			font-size: 35px;
+			font-weight: 300;
+			border: 0px;
+			width: 100%;
+			color: #fff;
+		}
+		.ugadmiss .last-buttons .title button:hover {
+			color:#fff;
+			background-color:rgba(134,31,65,1) !important;
+		}
+
+		.ugadmiss .last-buttons .title p,
+		.ugadmiss .last-buttons .title h1,
+		.ugadmiss .last-buttons .title h2,
+		.ugadmiss .last-buttons .title h3 {
+			color: #000;
+		}
+
+	/* (New version 2 homepage) 2018-06-01 15:44:26 */
+	.ugadmiss.admiss-home .last-buttons .admiss-button button {
+		background-color: #C64600; /* default */
+		padding:15px;
+		text-align: center;
+		margin-bottom:20px;
+		font-family: gineso-condensed,sans-serif;
+		font-size: 35px;
+		font-weight: 300;
+		border: 0px;
+		width: 100%;
+		color: #fff; /* default */
+		text-transform: uppercase;
+	}
+	.ugadmiss.admiss-home .last-buttons .admiss-button button:hover {
+		color:#fff; /* default */
+		background-color:rgba(134,31,65,1) !important; /* default */
+	}
+	.ugadmiss.admiss-home .last-buttons .admiss-button.b-orange-c-maroon button {
+		background-color: #C64600 !important;
+		color: #fff;
+	}
+	.ugadmiss.admiss-home .last-buttons .admiss-button.b-orange-c-maroon button:hover {
+		background-color:rgba(134,31,65,1) !important;
+		color: #fff;
+	}
+	.ugadmiss.admiss-home .last-buttons .admiss-button.hs-c-blue button {
+		background-color: rgba(109, 106, 117, 1.0) !important;
+		color: #fff;
+	}
+	.ugadmiss.admiss-home .last-buttons .admiss-button.hs-c-blue button:hover {
+		background-color:#003C71 !important;
+		color: #fff;
+	}
+
+	.ugadmiss.admiss-home .last-buttons div.row > div {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+
+/* --------------------------------------------------------
+
+BACKGROUND CONTAINER
+
+----------------------------------------------------------*/
+
+	.ugadmiss .row-container .bg-container {
+		margin: 0px;
+		background-repeat: no-repeat;
+	}
+	.ugadmiss .row-container .bg-container[class~='pad-left'] {
+		padding-left: 40px;
+	}
+	.ugadmiss .row-container .bg-container[class~='border-left'] {
+		border-left: 1px dashed rgba(255,102,0,1);
+	}
+
+	.ugadmiss .row-container .bg-container .copy-container-on-right,
+	.ugadmiss .row-container .bg-container .copy-container-on-left {
+		transition: all 1s ease-in-out;
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+	}
+	
+	.ugadmiss .row-container .bg-container .fade-in {
+		height:auto;
+		overflow: hidden;
+		transition: height 1s ease-in-out;
+		-webkit-transition: height 1s ease-in-out;
+		-moz-transition: height 1s ease-in-out;
+	}
+	.ugadmiss .row-container .bg-container .fade-in.open {
+		display:block;
+		height: 313px;
+		max-height: fit-content;
+		transition: height 1s ease-in-out;
+		-webkit-transition: height 1s ease-in-out;
+		-moz-transition: height 1s ease-in-out;
+	}
+
+	.ugadmiss .row-container .bg-container .see-more {
+		 display:none; /* temp */
+	}
+	
+	.ugadmiss .row-container .bg-container .see-more p,
+	.ugadmiss .row-container .bg-container .see-more h1,
+	.ugadmiss .row-container .bg-container .see-more h2,
+	.ugadmiss .row-container .bg-container .see-more h3 {
+		border-bottom: 1px dashed rgba(255,102,0,1);
+		padding-bottom: 6px;
+		display:unset;
+	}
+
+	.ugadmiss .row-container .bg-container .see-more a,
+	.ugadmiss .row-container .bg-container .see-more a:link,
+	.ugadmiss .row-container .bg-container .see-more a:active,
+	.ugadmiss .row-container .bg-container .see-more a:hover,
+	.ugadmiss .row-container .bg-container .see-more a:visited {
+		text-decoration: none;
+	}
+
+
+/* --------------------------------------------------------
+
+COPY CONTAINERS
+
+----------------------------------------------------------*/
+	.ugadmiss .row-container .bg-container .major-header,
+	.ugadmiss .row-container .bg-container .firstgen-header {
+		color: rgba(255, 255, 255, 1.0);
+		padding: 30px;
+		background-color: rgba(0, 0, 0,0.7);
+	}
+	.ugadmiss .row-container .bg-container .major-header h1 a,
+	.ugadmiss .row-container .bg-container .major-header h2 a,
+	.ugadmiss .row-container .bg-container .major-header h3 a,
+	.ugadmiss .row-container .bg-container .firstgen-header h1 a,
+	.ugadmiss .row-container .bg-container .firstgen-header h2 a,
+	.ugadmiss .row-container .bg-container .firstgen-header h3 a {
+		color: rgba(247, 144, 30, 1.0);
+	}
+	.ugadmiss .row-container .bg-container .major-header h1 a:hover,
+	.ugadmiss .row-container .bg-container .major-header h2 a:hover,
+	.ugadmiss .row-container .bg-container .major-header h3 a:hover,
+	.ugadmiss .row-container .bg-container .firstgen-header h1 a:hover,
+	.ugadmiss .row-container .bg-container .firstgen-header h2 a:hover,
+	.ugadmiss .row-container .bg-container .firstgen-header h3 a:hover {
+		text-decoration: underline;
+	}
+	.ugadmiss .row-container .bg-container .major-header,
+	.ugadmiss .row-container .bg-container .firstgen-header {
+		text-align: center;
+	}
+
+	.ugadmiss .row-container .bg-container .copy-container-on-right,
+	.ugadmiss .row-container .bg-container .copy-container-on-left {
+		padding: 30px;
+		text-align: initial;
+		max-width: 992px;
+	}
+
+	.ugadmiss .row-container .bg-container .header-title[class~='maroon'] {
+			color: rgba(139, 31, 65, 1.0);
+	}
+	.ugadmiss .row-container .bg-container .header-title[class~='orange'] {
+			color: rgba(198, 70, 0, 1.0);
+	}
+
+	.ugadmiss .row-container .bg-container .header-title h1,
+	.ugadmiss .row-container .bg-container .header-title h2,
+	.ugadmiss .row-container .bg-container .header-title h3,
+	.ugadmiss .row-container .bg-container .major-header h1,
+	.ugadmiss .row-container .bg-container .major-header h2,
+	.ugadmiss .row-container .bg-container .major-header h3,
+	.ugadmiss .row-container .bg-container .firstgen-header h1,
+	.ugadmiss .row-container .bg-container .firstgen-header h2,
+	.ugadmiss .row-container .bg-container .firstgen-header h3,
+	.ugadmiss .row-container .black-box-visit-schedule .tabs-title h1,
+	.ugadmiss .row-container .black-box-visit-schedule .tabs-title h2,
+	.ugadmiss .row-container .black-box-visit-schedule .tabs-title h3 {
+		margin-left: 0px !important;
+	}
+
+	/* =========================================== */
+
+/* --------------------------------------------------------
+
+COPY 
+
+----------------------------------------------------------*/
+	.ugadmiss .row-container .bg-container .copy[class~='pad-right'] {
+		padding-right: 20px;
+	}
+
+/* --------------------------------------------------------
+
+JS 'Date box'
+
+----------------------------------------------------------*/
+	.ugadmiss .black-box-visit-schedule {
+		text-align: initial;
+		top: 500px;
+		right: 0;
+		z-index: 200;
+		min-height: 300px;
+	}
+	.ugadmiss .black-box-visit-schedule .visit-schedule-title {
+		display: inline-block;
+		padding-right: 32px;
+		padding-bottom: 8px;
+	}
+
+	.ugadmiss .black-box-visit-schedule .tabs-title h1,
+	.ugadmiss .black-box-visit-schedule .tabs-title h2,
+	.ugadmiss .black-box-visit-schedule .tabs-title h3 {
+		color:#861F41;
+	}
+
+	.ugadmiss .black-box-visit-schedule .visit-schedule-title h1,
+	.ugadmiss .black-box-visit-schedule .visit-schedule-title h2,
+	.ugadmiss .black-box-visit-schedule .visit-schedule-title h3 {
+		margin-bottom: 0px !important;
+	}
+
+	.ugadmiss .black-box-visit-schedule .maroon-24-600 {
+		font-family: 'Lato', sans-serif;
+		font-weight: 600;
+		font-size: 24px;
+		color: #861F41;
+	}
+	.ugadmiss .black-box-visit-schedule .visit-tab {
+		position: relative;
+		top: 1px;
+		z-index: 8;
+		display: inline-block;
+		color: #fff; /* white */
+		border: #861F41 1px solid;
+		border-bottom: #ffffff !important;
+		padding: 0 16px;
+		font-size: 20px;
+		margin-right: -3px !important;
+		background-color: #861F41;
+	}
+	.ugadmiss .black-box-visit-schedule .visit-tab.active {
+		z-index: 10;
+		color: #861F41; /* white */
+		background-color: #ffffff;
+		border-bottom: #ffffff !important;
+	}
+	.ugadmiss .black-box-visit-schedule .visit-folder {
+		z-index: 9;
+		border-collapse:collapse;
+		/* margin-top: -9px; */
+		border: #861F41 1px solid;
+		padding: 20px 0px;
+		background-color: #ffffff;
+		min-height: 350px;
+	}
+	.ugadmiss .black-box-visit-schedule .visit-folder .col-sm-6 {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.ugadmiss .black-box-visit-schedule .visit-folder .fall-active,
+	.ugadmiss .black-box-visit-schedule .visit-folder .spring-active {
+		padding: 0;
+		margin: 0;
+		/* white-space: nowrap; */
+	}
+
+	.ugadmiss .black-box-visit-schedule .visit-folder .fall,
+	.ugadmiss .black-box-visit-schedule .visit-folder .spring {
+		display: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.ugadmiss .black-box-visit-schedule .visit-folder .daily {
+		display: none;
+		padding: 0;
+		margin: 0;
+	}
+	.ugadmiss .black-box-visit-schedule .planavisit a,
+	.ugadmiss .black-box-visit-schedule .planavisit a:hover,
+	.ugadmiss .black-box-visit-schedule .planavisit a:active,
+	.ugadmiss .black-box-visit-schedule .planavisit a:visited {
+		color: #D14124;
+		text-decoration: none;
+	}
+	.ugadmiss .black-box-visit-schedule .planavisit a:hover {
+		text-decoration: underline;
+	}
+	.ugadmiss .black-box-visit-schedule .normal-18-400,
+	.ugadmiss .black-box-visit-schedule .normal-18-400 {
+		font-weight: 400;
+		font-size: 18px;
+		color: #000;
+	}
+	.ugadmiss .black-box-visit-schedule .maroon-18-600,
+	.ugadmiss .black-box-visit-schedule .maroon-18-600 {
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		font-size: 25px;
+		color: #861F41;
+	}
